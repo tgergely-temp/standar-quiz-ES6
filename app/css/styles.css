@@ -1,5 +1,9 @@
-#quizApp {
+#quizApp.full-width {
+  width: 100%;
+}
 
+#quizApp.article-width {
+  max-width: 560px;
 }
 
 .quiz-question-block {
@@ -32,6 +36,7 @@
   min-height: 42px;
   vertical-align: middle;
   margin-left: 10px;
+  width: calc(100% - 70px);
 }
 
 .quiz-question-options ol {
@@ -54,8 +59,101 @@
    display: inline-block;
  }
 
- .quiz-question-options ol li:hover:before {
+ .quiz-question-options ol li:hover:before,
+ .quiz-question-options ol li.selected:before {
    background: #252525;
    color: #fff;
    border: 1px solid #252525;
+ }
+
+ .quiz-question-options ol li.correct:before {
+   background: #006022;
+   color: #fff;
+ }
+
+ .quiz-question-options ol li.correct {
+   color: #006022;
+ }
+
+  .quiz-question-options ol li.selected.incorrect {
+    text-decoration: line-through;
+  }
+
+  .quiz-separator {
+    margin: 18px auto;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+ #submitBtn {
+   background: #ddd;
+   color: #fff;
+   font-size: 18px;
+   border: 0;
+   padding: 10px 16px;
+   cursor: not-allowed;
+ }
+
+ #submitBtn.active {
+   background: #008384;
+   cursor: pointer;
+ }
+
+ #restartBtn {
+   color: #fff;
+   font-size: 18px;
+   border: 0;
+   padding: 10px 16px;
+   background: #008384;
+   cursor: pointer;
+   margin-top: 20px;
+ }
+
+ .quiz-outcome {
+   border: 2px solid #008384;
+   padding: 10px;
+   opacity: 0;
+   transition: all 2s ease-out 0s;
+ }
+
+ .quiz-outcome .score {
+   display: inline-block;
+   width: 200px;
+   text-align: center;
+   vertical-align: top;
+ }
+
+ .quiz-outcome .outcome {
+   display: inline-block;
+   width: 49%;
+   vertical-align: top;
+ }
+
+ .quiz-outcome h3 {
+   color: #008384;
+   font-size: 18px;
+ }
+
+ .quiz-outcome .total-score {
+   border-radius: 50%;
+   border: 1px solid #008384;
+   color: #008384;
+   font-size: 42px;
+   width: 124px;
+   height: 124px;
+   line-height: 124px;
+   display: block;
+   margin: 0 auto;
+ }
+
+ .quiz-competition {
+   border: 0;
+   width: 100%;
+   opacity: 0;
+   transition: all 1s ease-out 0s;
+ }
+
+.fade-in {
+   opacity: 1;
  }

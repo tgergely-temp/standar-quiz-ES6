@@ -7,7 +7,7 @@ const createQuestionType = () => {
   // Writing css rules
   listStyle.innerHTML = `
     .quiz-question-options ol li:before {
-      content: counter(item, ${quizConfig.options_type || 'upper-alpha'})
+      content: counter(item, ${quizConfig.optionsType || 'upper-alpha'})
     }
   `;
 

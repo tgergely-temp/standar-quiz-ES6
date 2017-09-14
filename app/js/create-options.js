@@ -1,3 +1,5 @@
+import selectAnswer from './select-answer';
+
 const createOptions = (optionsObj) => {
 
   const options = optionsObj.map(option => {
@@ -5,7 +7,7 @@ const createOptions = (optionsObj) => {
     const text = document.createTextNode(option.copy);
 
     li.appendChild(text);
-    li.addEventListener('click', function(){console.log('test')});
+    li.addEventListener('click', selectAnswer);
     return li;
   });
   return options;

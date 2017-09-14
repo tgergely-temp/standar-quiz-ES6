@@ -1,6 +1,7 @@
 import createOptions from './create-options';
 
 const createQuestion = (item, index) => {
+  const wrapper = document.getElementById('quizApp'); // Main wrapper
   const questionNumber = index + 1;
 
   // Template
@@ -22,9 +23,6 @@ const createQuestion = (item, index) => {
     </div>
     <!--// Question Options -->`;
 
-  // Main wrapper
-  const wrapper = document.getElementById('quizApp');
-
   // Creating a block per question
   const block = document.createElement('div');
   block.className = 'quiz-question-block';
@@ -36,10 +34,25 @@ const createQuestion = (item, index) => {
   // Answers
   const options = createOptions(item.options);
 
+  // Appending answers
   options.map(option => {
-    // Appending answers
     list.appendChild(option);
   });
+
+  // If there is feedback
+  if (item.feedback.length) {
+    // Div
+    const feedbackDiv = document.createElement('div');
+    feedbackDiv.className = 'quiz-question-feedback';
+
+    // Feedback text
+    const feedbackTxt = document.createTextNode(item.feedback);
+    feedbackDiv.appendChild(feedbackTxt)
+
+    // Apending after list
+    block.appendChild(feedbackDiv);
+
+  }
 
   // Appending block to Main Wrapper
   wrapper.appendChild(block);

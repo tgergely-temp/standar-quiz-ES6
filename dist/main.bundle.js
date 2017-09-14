@@ -65,283 +65,578 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-const quizConfig = {
-  quiz: [{
-      question: 'Which animals take part in the annual Easter Race Festival in Buccoo?',
-      options: [{
-          copy: 'Rabbits',
-          correct: false
-        },
-        {
-          copy: 'Goats',
-          correct: true
-        },
-        {
-          copy: 'Horses',
-          correct: false
-        }
-      ],
-      feedback: ''
-    }, {
-      question: 'Upon seeing Tobago for the first time Christopher Columbus described the island as ‘bella forma’ (beautifully formed). But in which year did this happen?',
-      options: [{
-          copy: '1498',
-          correct: true
-        },
-        {
-          copy: '1507',
-          correct: false
-        },
-        {
-          copy: '1513',
-          correct: false
-        }
-      ],
-      feedback: ''
-    },
-    {
-      question: 'There is a massive piece of a particular type of coral off the coast of Tobago. But which part of the body is it named after?',
-      options: [{
-          copy: 'Leg',
-          correct: false
-        },
-        {
-          copy: 'Brain',
-          correct: true
-        },
-        {
-          copy: 'Kidney',
-          correct: false
-        }
-      ],
-      feedback: ''
-    },
-    {
-      question: 'Main Ridge Forest Reserve is the oldest protected rainforest in the western hemisphere. But when did its protection begin?',
-      options: [{
-          copy: '1576',
-          correct: false
-        },
-        {
-          copy: '1676',
-          correct: false
-        },
-        {
-          copy: '1776',
-          correct: true
-        }
-      ],
-      feedback: ''
-    },
-    {
-      question: 'Which film was shot entirely in Tobago?',
-      options: [{
-          copy: 'Swiss Family Robinson',
-          correct: true
-        },
-        {
-          copy: 'Castaway',
-          correct: false
-        },
-        {
-          copy: 'Robinson Crusoe',
-          correct: false
-        }
-      ],
-      feedback: ''
-    },
-    {
-      question: 'The Nylon Pool, a shallow white ground coral pool off Pigeon Point is rumoured to be named after a member of the royal family who said the water was as clear as her nylon stockings. But which royal?',
-      options: [{
-          copy: 'Princess Beatrice',
-          correct: false
-        },
-        {
-          copy: 'Princess Eugenie',
-          correct: false
-        },
-        {
-          copy: 'Princess Margaret ',
-          correct: true
-        }
-      ],
-      feedback: ''
-    }
-  ],
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit
-  options_type: 'upper-alpha',
+  optionsType: 'upper-alpha',
+  fullWidth: false,
+  competitonEmbedCode: 'd28a0526-dee5-4da0-a412-896338450705',
+  quiz: [{
+    question: 'Which animals take part in the annual Easter Race Festival in Buccoo?',
+    options: [{
+      copy: 'Rabbits',
+      correct: false
+    }, {
+      copy: 'Goats',
+      correct: true
+    }, {
+      copy: 'Horses',
+      correct: false
+    }],
+    feedback: ''
+  }, {
+    question: 'Upon seeing Tobago for the first time Christopher Columbus described the island as ‘bella forma’ (beautifully formed). But in which year did this happen?',
+    options: [{
+      copy: '1498',
+      correct: true
+    }, {
+      copy: '1507',
+      correct: false
+    }, {
+      copy: '1513',
+      correct: false
+    }],
+    feedback: ''
+  }, {
+    question: 'There is a massive piece of a particular type of coral off the coast of Tobago. But which part of the body is it named after?',
+    options: [{
+      copy: 'Leg',
+      correct: false
+    }, {
+      copy: 'Brain',
+      correct: true
+    }, {
+      copy: 'Kidney',
+      correct: false
+    }],
+    feedback: ''
+  }, {
+    question: 'Main Ridge Forest Reserve is the oldest protected rainforest in the western hemisphere. But when did its protection begin?',
+    options: [{
+      copy: '1576',
+      correct: false
+    }, {
+      copy: '1676',
+      correct: false
+    }, {
+      copy: '1776',
+      correct: true
+    }],
+    feedback: ''
+  }, {
+    question: 'Which film was shot entirely in Tobago?',
+    options: [{
+      copy: 'Swiss Family Robinson',
+      correct: true
+    }, {
+      copy: 'Castaway',
+      correct: false
+    }, {
+      copy: 'Robinson Crusoe',
+      correct: false
+    }],
+    feedback: ''
+  }, {
+    question: 'The Nylon Pool, a shallow white ground coral pool off Pigeon Point is rumoured to be named after a member of the royal family who said the water was as clear as her nylon stockings. But which royal?',
+    options: [{
+      copy: 'Princess Beatrice',
+      correct: false
+    }, {
+      copy: 'Princess Eugenie',
+      correct: false
+    }, {
+      copy: 'Princess Margaret ',
+      correct: true
+    }],
+    feedback: ''
+  }],
   outcome: [{
-      title: 'Must try harder',
-      explanation: [
-        '0 out of 6  The bad news is you’re not very good at Tobago quizzes. The good news is there’s a very easy way to make sure you ace the next one. Read our inspirational Tobago supplement.',
-        '1 out of 6  There’s certainly room for improvement but let’s look on the bright side – you didn’t score 0. You do have much to learn about a seriously impressive island so make sure you read all about it.',
-        '2 out of 6  Not bad but not brilliant either. You know a little bit about Tobago but could do with a serious refresher course. It’s probably worth considering jumping on a plane over there immediately.'
-      ]
-    },
-    {
-      title: 'Not bad',
-      explanation: [
-        '3 out of 6  A respectable score but nothing to show off about on your social media channels. If you want to ensure a perfect score next time you’ll need to get revising. Take a look at our guide to everything Tobago to help.',
-        '4 out of 6   This score deserves a well done. Not a huge congratulations but certainly a gentle pat on the back. You seem to know a fair amount about the island but could improve with the help of this inspirational guide to Tobago.'
-      ]
-    },
-    {
-      title: 'Excellent work',
-      explanation: [
-        '5 out of 6  A great score but frustratingly close to perfection. You are a Tobago master but agonisingly short of being a grand master. Not quite ready for Tobago to be your specialist subject on a television quiz show. You get the idea. We’re impressed, though. If you want to achieve perfection next time, this guide will certainly help.',
-        '6 out 6  What can we say? Other than bravo. You are either from Tobago or know the place very well indeed. In which case you’re already fully aware of what an amazing island it is. Still, if you want to start planning your next trip, this guide is well worth a look.'
-      ]
-    }
-  ]
+    title: 'Must try harder',
+    explanation: '0 out of 6  The bad news is you’re not very good at Tobago quizzes. The good news is there’s a very easy way to make sure you ace the next one. Read our inspirational Tobago supplement.'
+  }, {
+    title: 'Must try harder',
+    explanation: '1 out of 6  There’s certainly room for improvement but let’s look on the bright side – you didn’t score 0. You do have much to learn about a seriously impressive island so make sure you read all about it.'
+  }, {
+    title: 'Must try harder',
+    explanation: '2 out of 6  Not bad but not brilliant either. You know a little bit about Tobago but could do with a serious refresher course. It’s probably worth considering jumping on a plane over there immediately.'
+  }, {
+    title: 'Not bad',
+    explanation: '3 out of 6  A respectable score but nothing to show off about on your social media channels. If you want to ensure a perfect score next time you’ll need to get revising. Take a look at our guide to everything Tobago to help.'
+  }, {
+    title: 'Not bad',
+    explanation: '4 out of 6   This score deserves a well done. Not a huge congratulations but certainly a gentle pat on the back. You seem to know a fair amount about the island but could improve with the help of this inspirational guide to Tobago.'
+  }, {
+    title: 'Excellent work',
+    explanation: '5 out of 6  A great score but frustratingly close to perfection. You are a Tobago master but agonisingly short of being a grand master. Not quite ready for Tobago to be your specialist subject on a television quiz show. You get the idea. We’re impressed, though. If you want to achieve perfection next time, this guide will certainly help.'
+  }, {
+    title: 'Excellent work',
+    explanation: '6 out 6  What can we say? Other than bravo. You are either from Tobago or know the place very well indeed. In which case you’re already fully aware of what an amazing island it is. Still, if you want to start planning your next trip, this guide is well worth a look.'
+  }]
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (quizConfig);
-
+exports.default = quizConfig;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__questions__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__create_question__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__create_question_type__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_styles_css__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__css_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__css_styles_css__);
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
+var _questions = __webpack_require__(0);
 
+var _questions2 = _interopRequireDefault(_questions);
 
-const numberQuestions = __WEBPACK_IMPORTED_MODULE_0__questions__["a" /* default */].quiz.length;
+var _createQuestion = __webpack_require__(2);
 
-function initQuiz() {
-  __WEBPACK_IMPORTED_MODULE_0__questions__["a" /* default */].quiz.map((item, indx) => {
-    Object(__WEBPACK_IMPORTED_MODULE_1__create_question__["a" /* default */])(item, indx);
+var _createQuestion2 = _interopRequireDefault(_createQuestion);
+
+var _createQuestionType = __webpack_require__(5);
+
+var _createQuestionType2 = _interopRequireDefault(_createQuestionType);
+
+var _createSubmitButton = __webpack_require__(6);
+
+var _createSubmitButton2 = _interopRequireDefault(_createSubmitButton);
+
+__webpack_require__(11);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var initQuiz = function initQuiz() {
+  /* ---------------------------------------------------------------
+  * Creating the div tag to wrapping the quiz
+  * ---------------------------------------------------------------- */
+  var quizWidth = _questions2.default.fullWidth ? 'full-width' : 'article-width';
+  var mainWrapper = '<div class="quiz-wrap ' + quizWidth + '" id="quizApp"></div>';
+  document.write(mainWrapper);
+
+  /* ---------------------------------------------------------------
+  * Iterating through questions
+  * --------------------------------------------------------------- */
+  _questions2.default.quiz.map(function (item, indx) {
+    (0, _createQuestion2.default)(item, indx);
   });
-  // Adding type for question options
-  Object(__WEBPACK_IMPORTED_MODULE_2__create_question_type__["a" /* default */])();
-}
+  /* --------------------------------------------------------------------------
+  * Adding type for question options. This is to determine what type of
+  * options is going to be the quiz. Eg: upper-alpha, upper-roman, decimal...
+  * Editable in questions.js file
+  * ------------------------------------------------------------------------ */
+  (0, _createQuestionType2.default)();
 
-// Initialising quiz
+  /* ---------------------------------------------------------------
+  * Creating submit button
+  * --------------------------------------------------------------- */
+  (0, _createSubmitButton2.default)();
+};
+
+/* ---------------------------------------------------------------
+* Initialising quiz
+* --------------------------------------------------------------- */
 initQuiz();
 
+exports.default = initQuiz;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__create_options__ = __webpack_require__(3);
 
 
-const createQuestion = (item, index) => {
-  const questionNumber = index + 1;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createOptions = __webpack_require__(3);
+
+var _createOptions2 = _interopRequireDefault(_createOptions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createQuestion = function createQuestion(item, index) {
+  var wrapper = document.getElementById('quizApp'); // Main wrapper
+  var questionNumber = index + 1;
 
   // Template
-  const markup = `
-    <!-- Question Header -->
-    <div class="quiz-question-header">
-      <div class="quiz-question-number">
-        Q. ${questionNumber}
-      </div>
-      <div class="quiz-question-text">
-        <p>${item.question}</p>
-      </div>
-    </div>
-    <!--// Question Header -->
-    <!-- Question Options -->
-    <div class="quiz-question-options">
-      <ol>
-      </ol>
-    </div>
-    <!--// Question Options -->`;
-
-  // Main wrapper
-  const wrapper = document.getElementById('quizApp');
+  var markup = '\n    <!-- Question Header -->\n    <div class="quiz-question-header">\n      <div class="quiz-question-number">\n        Q. ' + questionNumber + '\n      </div>\n      <div class="quiz-question-text">\n        <p>' + item.question + '</p>\n      </div>\n    </div>\n    <!--// Question Header -->\n    <!-- Question Options -->\n    <div class="quiz-question-options">\n      <ol>\n      </ol>\n    </div>\n    <!--// Question Options -->';
 
   // Creating a block per question
-  const block = document.createElement('div');
+  var block = document.createElement('div');
   block.className = 'quiz-question-block';
   block.innerHTML = markup;
 
   // We get the OL reference
-  const list = block.querySelector('ol');
+  var list = block.querySelector('ol');
 
   // Answers
-  const options = Object(__WEBPACK_IMPORTED_MODULE_0__create_options__["a" /* default */])(item.options);
+  var options = (0, _createOptions2.default)(item.options);
 
-  options.map(option => {
-    // Appending answers
+  // Appending answers
+  options.map(function (option) {
     list.appendChild(option);
   });
 
+  // If there is feedback
+  if (item.feedback.length) {
+    // Div
+    var feedbackDiv = document.createElement('div');
+    feedbackDiv.className = 'quiz-question-feedback';
+
+    // Feedback text
+    var feedbackTxt = document.createTextNode(item.feedback);
+    feedbackDiv.appendChild(feedbackTxt);
+
+    // Apending after list
+    block.appendChild(feedbackDiv);
+  }
+
   // Appending block to Main Wrapper
   wrapper.appendChild(block);
-}
+};
 
-/* harmony default export */ __webpack_exports__["a"] = (createQuestion);
-
+exports.default = createQuestion;
 
 /***/ }),
 /* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-const createOptions = (optionsObj) => {
 
-  const options = optionsObj.map(option => {
-    const li = document.createElement('li');
-    const text = document.createTextNode(option.copy);
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _selectAnswer = __webpack_require__(4);
+
+var _selectAnswer2 = _interopRequireDefault(_selectAnswer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createOptions = function createOptions(optionsObj) {
+
+  var options = optionsObj.map(function (option) {
+    var li = document.createElement('li');
+    var text = document.createTextNode(option.copy);
 
     li.appendChild(text);
-    li.addEventListener('click', function(){console.log('test')});
+    li.addEventListener('click', _selectAnswer2.default);
     return li;
   });
   return options;
-}
+};
 
-/* harmony default export */ __webpack_exports__["a"] = (createOptions);
-
+exports.default = createOptions;
 
 /***/ }),
 /* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__questions__ = __webpack_require__(0);
 
 
-const createQuestionType = () => {
-  const quiz = document.getElementById('quizApp'); // Quiz
-  const listStyle = document.createElement('style'); // Creating <style> tag
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  // Writing css rules
-  listStyle.innerHTML = `
-    .quiz-question-options ol li:before {
-      content: counter(item, ${__WEBPACK_IMPORTED_MODULE_0__questions__["a" /* default */].options_type || 'upper-alpha'})
+var _questions = __webpack_require__(0);
+
+var _questions2 = _interopRequireDefault(_questions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var quizLength = _questions2.default.quiz.length;
+
+var selectAnswer = function selectAnswer(e) {
+  var answers = e.target.parentNode.children;
+  var answersArr = [].slice.call(answers);
+  var selected = e.target;
+  var submitBtn = document.querySelector('#submitBtn');
+
+  // Clear previous option
+  answersArr.map(function (a) {
+    if (a.className) {
+      a.className = '';
     }
-  `;
+  });
 
-  // Appending <style> tag
-  quiz.appendChild(listStyle);
-}
+  // Select Answers
+  selected.className = 'selected';
 
-/* harmony default export */ __webpack_exports__["a"] = (createQuestionType);
+  // Active submit button if all questions have been answered
+  var questionsSelected = document.querySelectorAll('#quizApp li.selected').length;
+  if (questionsSelected === quizLength) {
+    submitBtn.removeAttribute('disabled');
+    submitBtn.classList.add('active');
+  }
+};
 
+exports.default = selectAnswer;
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _questions = __webpack_require__(0);
+
+var _questions2 = _interopRequireDefault(_questions);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createQuestionType = function createQuestionType() {
+  var quiz = document.getElementById('quizApp'); // Quiz
+  var listStyle = document.createElement('style'); // Creating <style> tag
+
+  // Writing css rules
+  listStyle.innerHTML = '\n    .quiz-question-options ol li:before {\n      content: counter(item, ' + (_questions2.default.optionsType || 'upper-alpha') + ')\n    }\n  ';
+
+  // Appending <style> tag
+  quiz.appendChild(listStyle);
+};
+
+exports.default = createQuestionType;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _checkAnswers = __webpack_require__(7);
+
+var _checkAnswers2 = _interopRequireDefault(_checkAnswers);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createSubmitButton = function createSubmitButton() {
+  var wrapper = document.getElementById('quizApp');
+  var button = document.createElement('input');
+  button.setAttribute('type', 'submit');
+  button.setAttribute('id', 'submitBtn');
+  button.setAttribute('disabled', 'disabled');
+  button.addEventListener('click', _checkAnswers2.default);
+  wrapper.appendChild(button);
+};
+
+exports.default = createSubmitButton;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _questions = __webpack_require__(0);
+
+var _questions2 = _interopRequireDefault(_questions);
+
+var _showOutcome = __webpack_require__(8);
+
+var _showOutcome2 = _interopRequireDefault(_showOutcome);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var checkAnswers = function checkAnswers() {
+  var score = 0;
+  var questions = document.querySelectorAll('.quiz-question-options'); // Node List
+  var questionsArray = [].slice.call(questions); // Conver to array
+
+  var submitBtn = document.querySelector('#submitBtn');
+  var restartBtn = document.createElement('input');
+
+  questionsArray.map(function (question, index) {
+    var answers = _questions2.default.quiz[index].options;
+    var options = question.querySelectorAll('li');
+
+    answers.map(function (answer, index) {
+      var isCorrect = answer.correct ? 'correct' : 'incorrect';
+
+      if (answer.correct && options[index].className === 'selected') {
+        score++;
+      }
+      options[index].classList.add(isCorrect);
+    });
+  });
+
+  submitBtn.style.display = 'none';
+  (0, _showOutcome2.default)(score, _questions2.default.quiz.length, _questions2.default.outcome[score]);
+};
+
+exports.default = checkAnswers;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _questions = __webpack_require__(0);
+
+var _questions2 = _interopRequireDefault(_questions);
+
+var _restartQuiz = __webpack_require__(9);
+
+var _restartQuiz2 = _interopRequireDefault(_restartQuiz);
+
+var _animatedScroll = __webpack_require__(10);
+
+var _animatedScroll2 = _interopRequireDefault(_animatedScroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var showOutcome = function showOutcome(score, nQuestions, outcome) {
+  var wrapper = document.getElementById('quizApp');
+  var restartBtn = document.createElement('button');
+  var quizOutcome = document.createElement('div');
+
+  quizOutcome.setAttribute('class', 'quiz-outcome fade-in');
+  restartBtn.setAttribute('type', 'button');
+  restartBtn.setAttribute('id', 'restartBtn');
+  restartBtn.innerHTML = 'Restart';
+
+  var markup = '\n      <div class="score">\n        <h3>You scored</h3>\n        <div class="total-score">\n          ' + score + '/' + nQuestions + '\n        </div>\n      </div>\n\n      <div class="outcome">\n        <h3>' + outcome.title + '</h3>\n        <p>' + outcome.explanation + '</p>\n      </div>\n  ';
+
+  quizOutcome.innerHTML = markup;
+  var randomNum = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+
+  if (_questions2.default.competiton_embed !== '') {
+    var scriptTag = document.createElement('script');
+    var iFrameTag = document.createElement('iframe');
+    var separator = document.createElement('hr');
+
+    iFrameTag.setAttribute('src', 'https://display.engagesciences.com/display/container/dc/' + _questions2.default.competitonEmbedCode);
+    iFrameTag.setAttribute('scrolling', 'no');
+    iFrameTag.setAttribute('id', 'ngxFrame' + randomNum);
+    iFrameTag.setAttribute('allowTransparency', 'true');
+    iFrameTag.setAttribute('class', 'quiz-competition fade-in');
+    scriptTag.setAttribute('src', 'https://display.engagesciences.com/ui/ngx.embed.min.js');
+    separator.className = 'quiz-separator';
+
+    quizOutcome.appendChild(separator);
+    quizOutcome.appendChild(scriptTag);
+    quizOutcome.appendChild(iFrameTag);
+  }
+
+  wrapper.appendChild(quizOutcome);
+  wrapper.appendChild(restartBtn);
+
+  // Scroll Animation
+  var quizY = quizOutcome.getBoundingClientRect();
+  (0, _animatedScroll2.default)(document.body, quizY.top, 500);
+
+  restartBtn.addEventListener('click', _restartQuiz2.default);
+};
+
+exports.default = showOutcome;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _index = __webpack_require__(1);
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var restartQuiz = function restartQuiz() {
+  var quiz = document.getElementById('quizApp');
+  quiz.parentNode.removeChild(quiz);
+
+  (0, _index2.default)();
+};
+
+exports.default = restartQuiz;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var scrollTo = function scrollTo(element, to, duration) {
+    var start = element.scrollTop,
+        change = to - start,
+        increment = 20;
+    var currentTime = 0;
+
+    var animateScroll = function animateScroll() {
+        currentTime += increment;
+        var val = Math.easeInOutQuad(currentTime, start, change, duration);
+        element.scrollTop = val;
+        if (currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    animateScroll();
+};
+
+//t = current time
+//b = start value
+//c = change in value
+//d = duration
+Math.easeInOutQuad = function (t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+};
+
+exports.default = scrollTo;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(6);
+var content = __webpack_require__(12);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -349,14 +644,14 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(8)(content, options);
+var update = __webpack_require__(14)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./styles.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./styles.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -366,21 +661,21 @@ if(false) {
 }
 
 /***/ }),
-/* 6 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)(undefined);
+exports = module.exports = __webpack_require__(13)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "#quizApp {\n\n}\n\n.quiz-question-block {\n  counter-reset: item;\n  margin-bottom: 30px;\n}\n\n.quiz-question-header {\n  margin-bottom: 26px;\n}\n\n.quiz-question-number {\n  display: inline-block;\n  background: #008384;\n  color: #fff;\n}\n\n.quiz-question-number,\n.quiz-question-options ol li::before {\n  border: 1px solid #008384;\n  width: 50px;\n  height: 38px;\n  line-height: 42px;\n  text-align: center;\n  vertical-align: middle;\n}\n\n.quiz-question-text {\n  display: inline-block;\n  min-height: 42px;\n  vertical-align: middle;\n  margin-left: 10px;\n}\n\n.quiz-question-options ol {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.quiz-question-options ol li {\n  counter-increment: item;\n  margin-bottom: 14px;\n  cursor: pointer;\n}\n\n.quiz-question-options ol li:before {\n   margin-right: 10px;\n   /*content: counter(item, upper-alpha);*/\n   background: #fff;\n   color: #008384;\n   display: inline-block;\n }\n\n .quiz-question-options ol li:hover:before {\n   background: #252525;\n   color: #fff;\n   border: 1px solid #252525;\n }\n", ""]);
+exports.push([module.i, "#quizApp.full-width {\n  width: 100%; }\n\n#quizApp.article-width {\n  max-width: 560px; }\n\n.quiz-question-block {\n  counter-reset: item;\n  margin-bottom: 30px; }\n\n.quiz-question-header {\n  margin-bottom: 26px; }\n\n.quiz-question-number {\n  display: inline-block;\n  background: #008384;\n  color: #fff; }\n\n.quiz-question-number,\n.quiz-question-options ol li::before {\n  border: 1px solid #008384;\n  width: 50px;\n  height: 38px;\n  line-height: 42px;\n  text-align: center;\n  vertical-align: middle; }\n\n.quiz-question-text {\n  display: inline-block;\n  min-height: 42px;\n  vertical-align: middle;\n  margin-left: 10px;\n  width: calc(100% - 70px); }\n\n.quiz-question-options ol {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n\n.quiz-question-options ol li {\n  counter-increment: item;\n  margin-bottom: 14px;\n  cursor: pointer; }\n\n.quiz-question-options ol li:before {\n  margin-right: 10px;\n  /*content: counter(item, upper-alpha);*/\n  background: #fff;\n  color: #008384;\n  display: inline-block; }\n\n.quiz-question-options ol li:hover:before,\n.quiz-question-options ol li.selected:before {\n  background: #252525;\n  color: #fff;\n  border: 1px solid #252525; }\n\n.quiz-question-options ol li.correct:before {\n  background: #006022;\n  color: #fff; }\n\n.quiz-question-options ol li.correct {\n  color: #006022; }\n\n.quiz-question-options ol li.selected.incorrect {\n  text-decoration: line-through; }\n\n.quiz-separator {\n  margin: 18px auto;\n  display: block;\n  border: 0;\n  border-bottom: 1px solid #ccc; }\n\n#submitBtn {\n  background: #ddd;\n  color: #fff;\n  font-size: 18px;\n  border: 0;\n  padding: 10px 16px;\n  cursor: not-allowed; }\n\n#submitBtn.active {\n  background: #008384;\n  cursor: pointer; }\n\n#restartBtn {\n  color: #fff;\n  font-size: 18px;\n  border: 0;\n  padding: 10px 16px;\n  background: #008384;\n  cursor: pointer;\n  margin-top: 20px; }\n\n.quiz-outcome {\n  border: 2px solid #008384;\n  padding: 10px;\n  opacity: 0;\n  transition: all 2s ease-out 0s; }\n\n.quiz-outcome .score {\n  display: inline-block;\n  width: 200px;\n  text-align: center;\n  vertical-align: top; }\n\n.quiz-outcome .outcome {\n  display: inline-block;\n  width: 49%;\n  vertical-align: top; }\n\n.quiz-outcome h3 {\n  color: #008384;\n  font-size: 18px; }\n\n.quiz-outcome .total-score {\n  border-radius: 50%;\n  border: 1px solid #008384;\n  color: #008384;\n  font-size: 42px;\n  width: 124px;\n  height: 124px;\n  line-height: 124px;\n  display: block;\n  margin: 0 auto; }\n\n.quiz-competition {\n  border: 0;\n  width: 100%;\n  opacity: 0;\n  transition: all 1s ease-out 0s; }\n\n.fade-in {\n  opacity: 1; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 7 */
+/* 13 */
 /***/ (function(module, exports) {
 
 /*
@@ -462,7 +757,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 8 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -508,7 +803,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(9);
+var	fixUrls = __webpack_require__(15);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -821,7 +1116,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 9 */
+/* 15 */
 /***/ (function(module, exports) {
 
 
