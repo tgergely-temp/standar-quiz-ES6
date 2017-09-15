@@ -1,9 +1,10 @@
-var devConfig = require('./webpack.config.js');
+const path = require('path');
+const devConfig = require('./webpack.config.js');
 
-var prodConfig = devConfig;
+const prodConfig = devConfig;
 
 prodConfig.output = {
-  path: 'dist',
+  path: path.resolve(__dirname, 'dist'),
   filename: 'bundle.js'
 };
 
