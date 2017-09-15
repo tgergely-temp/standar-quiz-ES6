@@ -2,7 +2,7 @@ const quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit
   optionsType: 'upper-alpha',
   fullWidth: false,
-  competitonEmbedCode: 'd28a0526-dee5-4da0-a412-896338450705',
+  competitonEmbedCode: '4bf93cf6-ee9a-42b5-824c-69133c37d80c',
   quiz: [{
       question: 'Which animals take part in the annual Easter Race Festival in Buccoo?',
       options: [{

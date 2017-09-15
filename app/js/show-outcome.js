@@ -52,7 +52,8 @@ const showOutcome = (score, nQuestions, outcome) => {
 
   // Scroll Animation
   const outcomeY = quizOutcome.getBoundingClientRect();
-  scrollTo(document.body, outcomeY.top, 500);
+  const b = document.getElementsByTagName('body')[0];
+  scrollTo(b, (b.scrollTop + outcomeY.top), 500);
 
   restartBtn.addEventListener('click', restartQuiz);
 }
