@@ -1,3 +1,7 @@
+/* ---------------------------------------------------
+* Scroll animation from GitHub user Andjosh
+* https://gist.github.com/andjosh/6764939
+* --------------------------------------------------- */
 const scrollTo = (element, to, duration) => {
     const start = element.scrollTop,
         change = to - start,

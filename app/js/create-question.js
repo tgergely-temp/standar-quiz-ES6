@@ -4,7 +4,9 @@ const createQuestion = (item, index) => {
   const wrapper = document.getElementById('quizApp'); // Main wrapper
   const questionNumber = index + 1;
 
-  // Template
+  /* ---------------------------------------------------
+  * Questions template markup
+  * --------------------------------------------------- */
   const markup = `
     <!-- Question Header -->
     <div class="quiz-question-header">
@@ -23,25 +25,31 @@ const createQuestion = (item, index) => {
     </div>
     <!--// Question Options -->`;
 
-  // Creating a block per question
+  /* ---------------------------------------------------
+  * Create a block per question
+  * --------------------------------------------------- */
   const block = document.createElement('div');
   block.className = 'quiz-question-block';
   block.innerHTML = markup;
 
-  // We get the OL reference
+  /* ---------------------------------------------------
+  * Get the OL reference
+  * --------------------------------------------------- */
   const list = block.querySelector('ol');
 
-  // Answers
+  /* ---------------------------------------------------
+  * Create Answers and append answers
+  * --------------------------------------------------- */
   const options = createOptions(item.options);
 
-  // Appending answers
   options.map(option => {
     list.appendChild(option);
   });
 
-  // If there is feedback
+  /* ---------------------------------------------------
+  * If feedback
+  * --------------------------------------------------- */
   if (item.feedback.length) {
-    // Div
     const feedbackDiv = document.createElement('div');
     feedbackDiv.className = 'quiz-question-feedback';
 
@@ -49,12 +57,12 @@ const createQuestion = (item, index) => {
     const feedbackTxt = document.createTextNode(item.feedback);
     feedbackDiv.appendChild(feedbackTxt)
 
-    // Apending after list
+    // Apending after list of options/answers
     block.appendChild(feedbackDiv);
-
   }
-
-  // Appending block to Main Wrapper
+  /* ---------------------------------------------------
+  * Appending block to Main Wrapper
+  * --------------------------------------------------- */
   wrapper.appendChild(block);
 }
 

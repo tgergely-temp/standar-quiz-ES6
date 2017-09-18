@@ -69,6 +69,13 @@ const showOutcome = (score, nQuestions, outcome) => {
     quizOutcome.appendChild(iFrameTag);
 
     iFrameTag.addEventListener('load', () => {
+      /* ---------------------------------------------------
+      * Score and Adobe ID get injected inside the competition
+      * WayIn form.
+      * It is necessary to create the input hidden fields on
+      * WayIn admin beforehand with names 'quizscore' and
+      * 'adobe_id' (Adobe ID is normally created already).
+      * --------------------------------------------------- */
       NGX.Embed.sendMessage({
         id: `ngxFrame${randomNum}`,
         action: 'setfieldvalues',

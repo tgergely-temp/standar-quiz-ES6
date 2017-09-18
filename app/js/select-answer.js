@@ -1,24 +1,30 @@
 import quizConfig from './questions';
 
-const quizLength = quizConfig.quiz.length;
-
 const selectAnswer = e => {
+  const quizLength = quizConfig.quiz.length;
   const answers = e.target.parentNode.children;
-  const answersArr = [].slice.call(answers);
+  const answersArr = [].slice.call(answers); // Convert to Array
   const selected = e.target;
   const submitBtn = document.querySelector('#submitBtn');
 
-  // Clear previous option
+  /* ---------------------------------------------------
+  * Clear previous option selected
+  * --------------------------------------------------- */
   answersArr.map(a => {
     if (a.className) {
       a.className = '';
     }
   });
 
-  // Select Answers
+  /* ---------------------------------------------------
+  * Selec answer
+  * --------------------------------------------------- */
   selected.className = 'selected';
 
-  // Active submit button if all questions have been answered
+  /* ---------------------------------------------------
+  * Active submit button if all questions have been
+  * answered
+  * --------------------------------------------------- */
   const questionsSelected = document.querySelectorAll('#quizApp li.selected').length;
   if (questionsSelected === quizLength) {
     submitBtn.removeAttribute('disabled');

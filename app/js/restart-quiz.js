@@ -2,14 +2,23 @@ import initQuiz from './index';
 import scrollTo from './animated-scroll';
 
 const restartQuiz = () => {
+  /* ---------------------------------------------------
+  * Empty quiz content
+  * --------------------------------------------------- */
   const quiz = document.getElementById('quizApp');
   quiz.innerHTML = '';
 
+  /* ---------------------------------------------------
+  * Init quiz again
+  * --------------------------------------------------- */
   initQuiz();
 
-  // Scroll Animation
+  /* ---------------------------------------------------
+  * Scroll animation
+  * --------------------------------------------------- */
   const quizY = quiz.getBoundingClientRect();
-  scrollTo(document.body, quizY.top, 500);
+  const b = document.getElementsByTagName('body')[0];
+  scrollTo(b, (b.scrollTop - quizY.top), 500);
 }
 
 export default restartQuiz;
