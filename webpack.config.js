@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './app/js/index.js',
@@ -15,6 +16,10 @@ module.exports = {
       title: 'Standard Quiz',
       template: 'app/index.html',
       inject: true
+    }),
+    new ExtractTextPlugin({
+      filename: 'style2.css'
+
     })
   ],
   output: {
@@ -23,13 +28,25 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.(sass|scss|css)$/,
+      //   use: [
+      //     'style-loader',
+      //     'css-loader',
+      //     'sass-loader'
+      //   ]
+      // },
       {
         test: /\.(sass|scss|css)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          //resolve-url-loader may be chained before sass-loader if necessary
+          use: [
+            'css-loader',
+            'sass-loader',
+            // {loader: 'postcss-loader', options: {}}
+          ]
+        })
       },
       {
         test: /\.js$/,

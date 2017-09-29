@@ -1,0 +1,40 @@
+.quiz-main {
+  position: relative;
+  min-height: 400px;
+  text-align: center;
+
+  .logo-main {
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+    margin: 40px auto 20px;
+    display: block;
+  }
+
+  h3 {
+    font: normal 50px 'fatfrank',sans-serif;
+    display: none;
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 440px) {
+      font-size: 36px;
+    }
+  }
+
+  .quiz-loading {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font: normal 16px 'fatfrank',sans-serif;
+  }
+
+  button {
+    margin-bottom: 80px;
+    display: none;
+  }
+}

@@ -2,7 +2,7 @@ import quizConfig from './questions';
 import createQuestion from './create-question';
 import createQuestionType from './create-question-type';
 import createSubmitButton from './create-submit-button';
-import '../css/styles.css';
+import '../sass/index.scss';
 
 const initQuiz = () => {
   /* ---------------------------------------------------------------
