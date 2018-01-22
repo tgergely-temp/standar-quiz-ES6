@@ -136,6 +136,17 @@
    margin-top: 20px;
  }
 
+ #findoutmoreBtn {
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  padding: 10px 16px;
+  background: #008384;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
  .quiz-outcome {
    opacity: 0;
    transition: all 2s ease-out 0s;
