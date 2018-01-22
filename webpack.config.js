@@ -2,9 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './app/js/index.js',
+  context: path.resolve('./app'),
+  entry: './js/index.js',
   devServer: {
     contentBase: './dist'
   },
@@ -14,13 +16,17 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       title: 'Standard Quiz',
-      template: 'app/index.html',
+      template: './index.html',
       inject: true
     }),
     new ExtractTextPlugin({
       filename: 'style2.css'
 
-    })
+    }),
+    new CopyWebpackPlugin([{
+      from: './imgs/**/*',
+      to: './'
+    }])
   ],
   output: {
     filename: '[name].bundle.js',

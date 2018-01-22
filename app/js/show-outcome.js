@@ -19,8 +19,13 @@ const showOutcome = (score, nQuestions, outcome) => {
   /* ---------------------------------------------------
   * Outcome markup
   * --------------------------------------------------- */
+
+  const ifimg = !outcome.img ? '' : 
+    `<img src="${outcome.img.src}" alt="${outcome.img.alt}" />`;
+
   const markup = `
       <div class="score">
+        ${ifimg}
         <h3>You scored</h3>
         <div class="total-score">
           ${score}/${nQuestions}
@@ -38,10 +43,11 @@ const showOutcome = (score, nQuestions, outcome) => {
   /* ---------------------------------------------------
   * Adobe Analytics
   * --------------------------------------------------- */
-  const campaignId = document.head.querySelector('[name="DCSext.campaignId"]').content || '';
-
-  _satellite.setVar('interactive', `cid: ${campaignId} - Standard quiz - score: ${score}`);
-  _satellite.track('sparkinteractive');
+  const campaignId = (document.head.querySelector('[name="DCSext.campaignId"]') || { content: null }).content;
+  if (campaignId) {
+    _satellite.setVar('interactive', `cid: ${campaignId} - Standard quiz - score: ${score}`);
+    _satellite.track('sparkinteractive');
+  }
 
   /* ---------------------------------------------------
   * Get a random number to generate an unique iFrame ID

@@ -32,9 +32,10 @@
   border: 1px solid #008384;
   width: 50px;
   height: 38px;
-  line-height: 42px;
+  line-height: 38px;
   text-align: center;
   vertical-align: top;
+  font-size: 18px;
 }
 
 .quiz-question-text {
@@ -44,22 +45,36 @@
   margin-left: 10px;
   width: calc(100% - 70px);
   font-weight: bold;
+  font-size: 18px;
+}
+
+.quiz-question-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.quiz-question-img img {
+  width: 100%;
 }
 
 .quiz-question-text p {
   margin: 0;
+  font-size: 18px;
 }
 
 .quiz-question-options ol {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 18px;
 }
 
 .quiz-question-options ol li {
   counter-increment: item;
   margin-bottom: 14px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .quiz-question-options ol li:before {
@@ -122,40 +137,54 @@
  }
 
  .quiz-outcome {
-   border: 2px solid #008384;
-   padding: 10px;
    opacity: 0;
    transition: all 2s ease-out 0s;
  }
 
  .quiz-outcome .score {
-   display: inline-block;
-   width: 200px;
-   text-align: center;
-   vertical-align: top;
+   display: block;
+   width: 100%;
+   text-align: left;
  }
 
  .quiz-outcome .outcome {
    display: inline-block;
-   width: 49%;
+   width: 100%;
    vertical-align: top;
  }
 
- .quiz-outcome h3 {
-   color: #008384;
-   font-size: 18px;
+ .quiz-outcome img {
+   max-width: 100%;
+   width: 100%;
  }
-
- .quiz-outcome .total-score {
-   border-radius: 50%;
-   border: 1px solid #008384;
-   color: #008384;
-   font-size: 42px;
-   width: 124px;
-   height: 124px;
-   line-height: 124px;
-   display: block;
+ 
+ .quiz-outcome h3 {
+   color: #000;
+   font-size: 18px;
    margin: 0 auto;
+   font-weight: 700;
+   line-height: 20px;
+  }
+
+  .quiz-outcome .outcome h3 {
+    font-weight: 400;
+  }
+
+ .quiz-outcome p {
+  color: #000;
+  font-size: 18px;
+   font-weight: 400;
+   margin: 0 auto;
+   line-height: 20px;
+}
+ .quiz-outcome .total-score {
+   font-size: 42px;
+   line-height: 60px;
+   font-weight: 700;
+   color: #008384;
+   width: 100%;
+   display: block;
+   margin: 10px auto 10px;
  }
 
  .quiz-competition {

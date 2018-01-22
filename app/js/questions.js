@@ -2,104 +2,205 @@ const quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit
   optionsType: 'upper-alpha',
   fullWidth: false,
-  competitonEmbedCode: '4bf93cf6-ee9a-42b5-824c-69133c37d80c',
+  competitonEmbedCode: '',
   quiz: [{
-      question: 'Which animals take part in the annual Easter Race Festival in Buccoo?',
+      question: 'The capital of St. Kitts is...',
+      img: {
+        src: './imgs/1.jpg',
+        alt: 'capital',
+      },
       options: [{
-          copy: 'Rabbits',
+          copy: 'Basseterre',
           correct: false
         },
         {
-          copy: 'Goats',
+          copy: 'Kingston',
+          correct: false
+        },
+        {
+          copy: 'Nassau',
+          correct: false
+        },
+        {
+          copy: 'Freetown',
+          correct: false
+        },
+        {
+          copy: 'Port Louis',
           correct: true
         },
-        {
-          copy: 'Horses',
-          correct: false
-        }
       ],
       feedback: ''
     }, {
-      question: 'Upon seeing Tobago for the first time Christopher Columbus described the island as ‘bella forma’ (beautifully formed). But in which year did this happen?',
+      question: 'The crater at the heart of St. Kitts\' tallest volcano, Mount Liamuiga, is known as...      ',
+      img: {
+        src: './imgs/2.jpg',
+        alt: 'crater',
+      },
       options: [{
-          copy: '1498',
+          copy: 'God’s Washbasin',
           correct: true
         },
         {
-          copy: '1507',
+          copy: 'The Devil’s Punchbowl',
           correct: false
         },
         {
-          copy: '1513',
+          copy: 'Hamish’s Porridge Bowl',
+          correct: false
+        },
+        {
+          copy: 'Giant’s Salad Bowl',
+          correct: false
+        },
+        {
+          copy: 'Jolly Green Giant',
+          correct: false
+        },
+      ],
+      feedback: ''
+    },
+    {
+      question: 'How many beaches does St. Kitts have?',
+      img: {
+        src: './imgs/3.jpg',
+        alt: 'beaches',
+      },
+      options: [{
+          copy: 'Seven',
+          correct: false
+        },
+        {
+          copy: '15',
+          correct: true
+        },
+        {
+          copy: '43',
+          correct: false
+        },
+        {
+          copy: 'Just the one',
+          correct: false
+        },
+        {
+          copy: 'None',
           correct: false
         }
       ],
       feedback: ''
     },
     {
-      question: 'There is a massive piece of a particular type of coral off the coast of Tobago. But which part of the body is it named after?',
+      question: 'People who live in St. Kitts are called...',
+      img: {
+        src: './imgs/4.jpg',
+        alt: 'people',
+      },
       options: [{
-          copy: 'Leg',
+          copy: 'Kittens',
           correct: false
         },
         {
-          copy: 'Brain',
+          copy: 'Saints',
+          correct: false
+        },
+        {
+          copy: 'Apostles',
           correct: true
         },
         {
-          copy: 'Kidney',
+          copy: 'Kittitians',
+          correct: false
+        },
+        {
+          copy: 'Hello Kitty',
           correct: false
         }
       ],
       feedback: ''
     },
     {
-      question: 'Main Ridge Forest Reserve is the oldest protected rainforest in the western hemisphere. But when did its protection begin?',
+      question: 'The official language of St. Kitts is...',
+      img: {
+        src: './imgs/5.jpg',
+        alt: 'language',
+      },
       options: [{
-          copy: '1576',
-          correct: false
-        },
-        {
-          copy: '1676',
-          correct: false
-        },
-        {
-          copy: '1776',
+          copy: 'English',
           correct: true
+        },
+        {
+          copy: 'Spanish',
+          correct: false
+        },
+        {
+          copy: 'St. Kitts Creole',
+          correct: false
+        },
+        {
+          copy: 'Dutch',
+          correct: false
+        },
+        {
+          copy: 'Japanese',
+          correct: false
         }
       ],
       feedback: ''
     },
     {
-      question: 'Which film was shot entirely in Tobago?',
+      question: 'The sister island of St. Kitts is called...',
+      img: {
+        src: './imgs/6.jpg',
+        alt: 'sister',
+      },
       options: [{
-          copy: 'Swiss Family Robinson',
-          correct: true
-        },
-        {
-          copy: 'Castaway',
+          copy: 'Montserrat',
           correct: false
         },
         {
-          copy: 'Robinson Crusoe',
+          copy: 'Jamaica',
+          correct: false
+        },
+        {
+          copy: 'Nevis',
+          correct: true
+        },
+        {
+          copy: 'Aruba',
+          correct: false
+        },
+        {
+          copy: 'Eel Pie Island',
           correct: false
         }
       ],
       feedback: ''
     },
     {
-      question: 'The Nylon Pool, a shallow white ground coral pool off Pigeon Point is rumoured to be named after a member of the royal family who said the water was as clear as her nylon stockings. But which royal?',
+      question: 'If somebody offers you goat water, should you...',
+      img: {
+        src: './imgs/7.jpg',
+        alt: 'goat water',
+      },
       options: [{
-          copy: 'Princess Beatrice',
+          copy: 'Tell them you’re not thirsty',
           correct: false
         },
         {
-          copy: 'Princess Eugenie',
+          copy: 'Say you prefer cow’s milk',
           correct: false
         },
         {
-          copy: 'Princess Margaret ',
+          copy: 'Mix it with slimline tonic',
           correct: true
+        },
+        {
+          copy: 'Bring some shampoo and conditioner',
+          correct: false
+        },
+        {
+          copy: 'Say yum and dig in to delicious homemade stew',
+          correct: false
         }
       ],
       feedback: ''
@@ -107,33 +208,69 @@ const quizConfig = {
   ],
   outcome: [
     {
-      title: 'Must try harder',
-      explanation: '<p>0 out of 6</p> <p>The bad news is you’re not very good at Tobago quizzes. The good news is there’s a very easy way to make sure you ace the next one. Read our inspirational Tobago supplement.</p>'
+      title: 'Oh dear, you need to lie down in the shade…',
+      explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
+      img: {
+        src: './imgs/answers/1.jpg',
+        alt: 'Oh dear',
+      }
     },
     {
-      title: 'Must try harder',
-      explanation: '<p>1 out of 6</p> <p>There’s certainly room for improvement but let’s look on the bright side – you didn’t score 0. You do have much to learn about a seriously impressive island so make sure you read all about it.</p>'
+      title: 'Oh dear, you need to lie down in the shade…',
+      explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
+      img: {
+        src: './imgs/answers/1.jpg',
+        alt: 'Oh dear',
+      }
     },
     {
-      title: 'Must try harder',
-      explanation: '<p>2 out of 6</p> <p>Not bad but not brilliant either. You know a little bit about Tobago but could do with a serious refresher course. It’s probably worth considering jumping on a plane over there immediately.</p>'
+      title: 'Oh dear, you need to lie down in the shade…',
+      explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
+      img: {
+        src: './imgs/answers/1.jpg',
+        alt: 'Oh dear',
+      }
     },
     {
-      title: 'Not bad',
-      explanation: '<p>3 out of 6</p> <p>A respectable score but nothing to show off about on your social media channels. If you want to ensure a perfect score next time you’ll need to get revising. Take a look at our guide to everything Tobago to help.</p>',
+      title: 'Oh dear, you need to lie down in the shade…',
+      explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
+      img: {
+        src: './imgs/answers/1.jpg',
+        alt: 'Oh dear',
+      }
     },
     {
-      title: 'Not bad',
-      explanation: '<p>4 out of 6</p> <p>This score deserves a well done. Not a huge congratulations but certainly a gentle pat on the back. You seem to know a fair amount about the island but could improve with the help of this inspirational guide to Tobago.</p>'
+      title: 'Hey, that’s not bad at all.',
+      explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
+      img: {
+        src: './imgs/answers/2.jpg',
+        alt: 'not bad',
+      }
     },
     {
-      title: 'Excellent work',
-      explanation: '<p>5 out of 6</p> <p>A great score but frustratingly close to perfection. You are a Tobago master but agonisingly short of being a grand master. Not quite ready for Tobago to be your specialist subject on a television quiz show. You get the idea. We’re impressed, though. If you want to achieve perfection next time, this guide will certainly help.</p>'
+      title: 'Hey, that’s not bad at all.',
+      explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
+      img: {
+        src: './imgs/answers/2.jpg',
+        alt: 'not bad',
+      }
     },
     {
-      title: 'Excellent work',
-      explanation: '<p>6 out 6</p> <p>What can we say? Other than bravo. You are either from Tobago or know the place very well indeed. In which case you’re already fully aware of what an amazing island it is. Still, if you want to start planning your next trip, this guide is well worth a look.</p>'
-    }
+      title: 'Hey, that’s not bad at all.',
+      explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
+      img: {
+        src: './imgs/answers/2.jpg',
+        alt: 'not bad',
+      }
+    },
+    {
+      title: 'Great score, you’re a true Kittitian!',
+      explanation: 'There’s always more to discover in St. Kitts',
+      img: {
+        src: './imgs/answers/3.jpg',
+        alt: 'Great',
+      }
+    },
   ]
 };
 
