@@ -109,6 +109,12 @@
 
   .quiz-question-options ol li.selected.incorrect {
     text-decoration: line-through;
+    color: red;
+  }
+
+  .quiz-question-options ol li.selected.incorrect:before {
+    background: red;
+    border: 1px solid red;
   }
 
   .quiz-separator {
@@ -123,6 +129,8 @@
    color: #fff;
    font-size: 18px;
    border: 0;
+   background-image: none;
+   border-radius: 0;
    padding: 10px 16px;
    cursor: not-allowed;
  }
@@ -138,6 +146,8 @@
    border: 0;
    padding: 10px 16px;
    background: #008384;
+   background-image: none;
+   border-radius: 0;
    cursor: pointer;
    margin-top: 20px;
  }
@@ -151,6 +161,8 @@
   cursor: pointer;
   margin-top: 20px;
   margin-right: 10px;
+  background-image: none;
+  border-radius: 0;
 }
 
  .quiz-outcome {

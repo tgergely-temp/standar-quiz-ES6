@@ -32,14 +32,14 @@ const quizConfig = {
     ],
     feedback: ''
   }, {
-    question: 'The crater at the heart of St. Kitts\' tallest volcano, Mount Liamuiga, is known as...      ',
+    question: 'The crater at the heart of St. Kitts\' tallest volcano, Mount Liamuiga, is known as...',
     img: {
       src: './imgs/2.jpg',
       alt: 'crater',
     },
     options: [{
       copy: 'God’s Washbasin',
-      correct: true
+      correct: false
     },
     {
       copy: 'The Devil’s Punchbowl',
@@ -51,7 +51,7 @@ const quizConfig = {
     },
     {
       copy: 'Giant’s Salad Bowl',
-      correct: false
+      correct: true
     },
     {
       copy: 'Jolly Green Giant',
@@ -61,29 +61,29 @@ const quizConfig = {
     feedback: ''
   },
   {
-    question: 'How many beaches does St. Kitts have?',
+    question: 'Which of the following competed for St Kitts at the Olympics...',
     img: {
       src: './imgs/3.jpg',
       alt: 'beaches',
     },
     options: [{
-      copy: 'Seven',
+      copy: 'Ato Boldon',
       correct: false
     },
     {
-      copy: '15',
+      copy: 'Kim Collins',
       correct: true
     },
     {
-      copy: '43',
+      copy: 'Raymond Stewart',
       correct: false
     },
     {
-      copy: 'Just the one',
+      copy: 'Usain Bolt',
       correct: false
     },
     {
-      copy: 'None',
+      copy: 'Frankie Fredericks',
       correct: false
     }
     ],
@@ -96,15 +96,15 @@ const quizConfig = {
       alt: 'people',
     },
     options: [{
-      copy: 'Kittens',
+      copy: 'Cuban',
       correct: false
     },
     {
-      copy: 'Saints',
+      copy: 'Nevisians',
       correct: false
     },
     {
-      copy: 'Apostles',
+      copy: 'Haitians',
       correct: false
     },
     {
@@ -112,7 +112,7 @@ const quizConfig = {
       correct: true
     },
     {
-      copy: 'Hello Kitty',
+      copy: 'Bajans',
       correct: false
     }
     ],
@@ -126,14 +126,14 @@ const quizConfig = {
     },
     options: [{
       copy: 'English',
-      correct: false
-    },
-    {
-      copy: 'Spanish',
       correct: true
     },
     {
-      copy: 'St. Kitts Creole',
+      copy: 'Spanish',
+      correct: false
+    },
+    {
+      copy: 'French',
       correct: false
     },
     {
@@ -192,7 +192,7 @@ const quizConfig = {
     },
     {
       copy: 'Mix it with slimline tonic',
-      correct: true
+      correct: false
     },
     {
       copy: 'Bring some shampoo and conditioner',
@@ -200,7 +200,7 @@ const quizConfig = {
     },
     {
       copy: 'Say yum and dig in to delicious homemade stew',
-      correct: false
+      correct: true
     }
     ],
     feedback: ''

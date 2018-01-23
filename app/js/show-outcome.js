@@ -15,8 +15,8 @@ const showOutcome = (score, nQuestions, outcome) => {
   quizOutcome.setAttribute('class', 'quiz-outcome fade-in');
   restartBtn.setAttribute('type', 'button');
   restartBtn.setAttribute('id', 'restartBtn');
-  findoutmoreBtn.setAttribute('id', 'findoutmoreBtn');
-  findoutmoreBtn.innerHTML = 'Find out more';
+  // findoutmoreBtn.setAttribute('id', 'findoutmoreBtn');
+  // findoutmoreBtn.innerHTML = 'Find out more';
   restartBtn.innerHTML = 'Restart';
 
   /* ---------------------------------------------------
@@ -99,13 +99,13 @@ const showOutcome = (score, nQuestions, outcome) => {
   /* --------------------------------------------------- 
   * Removing quiz
   * ---------------------------------------------------- */
-  const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];
-  quizitems.map(elem => elem.parentNode.removeChild(elem));
+  // const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];
+  // quizitems.map(elem => elem.parentNode.removeChild(elem));
   /* ---------------------------------------------------
   * Attaching elements to the DOM
   * --------------------------------------------------- */
   wrapper.appendChild(quizOutcome);
-  wrapper.appendChild(findoutmoreBtn);
+  // wrapper.appendChild(findoutmoreBtn);
   wrapper.appendChild(restartBtn);
 
   /* ---------------------------------------------------
