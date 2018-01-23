@@ -14,11 +14,11 @@
 
 .quiz-question-block {
   counter-reset: item;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .quiz-question-header {
-  margin-bottom: 26px;
+  margin-bottom: 13px;
 }
 
 .quiz-question-number {
@@ -52,6 +52,7 @@
   display: block;
   width: 100%;
   max-width: 100%;
+  margin-top: 20px;
 }
 
 .quiz-question-img img {
@@ -61,6 +62,11 @@
 .quiz-question-text p {
   margin: 0;
   font-size: 18px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; /* offsetting bad font */
+  top: -2px; /* offsetting bad font */
 }
 
 .quiz-question-options ol {
@@ -87,9 +93,9 @@
 
  .quiz-question-options ol li:hover:before,
  .quiz-question-options ol li.selected:before {
-   background: #252525;
+   background: #008384;
    color: #fff;
-   border: 1px solid #252525;
+   border: 1px solid #008384;
  }
 
  .quiz-question-options ol li.correct:before {

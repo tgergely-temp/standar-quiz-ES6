@@ -99,11 +99,8 @@ const showOutcome = (score, nQuestions, outcome) => {
   /* --------------------------------------------------- 
   * Removing quiz
   * ---------------------------------------------------- */
-
   const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];
   quizitems.map(elem => elem.parentNode.removeChild(elem));
-
-
   /* ---------------------------------------------------
   * Attaching elements to the DOM
   * --------------------------------------------------- */
