@@ -1,3 +1,6 @@
+const prod = true;
+const STATICPATH = prod ? '/content/dam/travel/Spark/St%20Kitts/2018/quiz/' : './';
+
 const quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit
   optionsType: 'upper-alpha',
@@ -6,7 +9,7 @@ const quizConfig = {
   quiz: [{
     question: 'The capital of St. Kitts is...',
     img: {
-      src: './imgs/1.jpg',
+      src: `${STATICPATH}imgs/1.jpg`,
       alt: 'capital',
     },
     options: [{
@@ -34,7 +37,7 @@ const quizConfig = {
   }, {
     question: 'The crater at the heart of St. Kitts\' tallest volcano, Mount Liamuiga, is known as...',
     img: {
-      src: './imgs/2.jpg',
+      src: `${STATICPATH}imgs/2.jpg`,
       alt: 'crater',
     },
     options: [{
@@ -63,7 +66,7 @@ const quizConfig = {
   {
     question: 'Which of the following competed for St Kitts at the Olympics...',
     img: {
-      src: './imgs/3.jpg',
+      src: `${STATICPATH}imgs/3.jpg`,
       alt: 'beaches',
     },
     options: [{
@@ -92,7 +95,7 @@ const quizConfig = {
   {
     question: 'People who live in St. Kitts are called...',
     img: {
-      src: './imgs/4.jpg',
+      src: `${STATICPATH}imgs/4.jpg`,
       alt: 'people',
     },
     options: [{
@@ -121,7 +124,7 @@ const quizConfig = {
   {
     question: 'The official language of St. Kitts is...',
     img: {
-      src: './imgs/5.jpg',
+      src: `${STATICPATH}imgs/5.jpg`,
       alt: 'language',
     },
     options: [{
@@ -150,7 +153,7 @@ const quizConfig = {
   {
     question: 'The sister island of St. Kitts is called...',
     img: {
-      src: './imgs/6.jpg',
+      src: `${STATICPATH}imgs/6.jpg`,
       alt: 'sister',
     },
     options: [{
@@ -179,7 +182,7 @@ const quizConfig = {
   {
     question: 'If somebody offers you goat water, should you...',
     img: {
-      src: './imgs/7.jpg',
+      src: `${STATICPATH}imgs/7.jpg`,
       alt: 'goat water',
     },
     options: [{
@@ -211,7 +214,7 @@ const quizConfig = {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
       img: {
-        src: './imgs/answers/1.jpg',
+        src: `${STATICPATH}imgs/answers/1.jpg`,
         alt: 'Oh dear',
       }
     },
@@ -219,7 +222,7 @@ const quizConfig = {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
       img: {
-        src: './imgs/answers/1.jpg',
+        src: `${STATICPATH}imgs/answers/1.jpg`,
         alt: 'Oh dear',
       }
     },
@@ -227,7 +230,7 @@ const quizConfig = {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
       img: {
-        src: './imgs/answers/1.jpg',
+        src: `${STATICPATH}imgs/answers/1.jpg`,
         alt: 'Oh dear',
       }
     },
@@ -235,7 +238,7 @@ const quizConfig = {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
       img: {
-        src: './imgs/answers/1.jpg',
+        src: `${STATICPATH}imgs/answers/1.jpg`,
         alt: 'Oh dear',
       }
     },
@@ -243,7 +246,7 @@ const quizConfig = {
       title: 'Hey, that’s not bad at all.',
       explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
       img: {
-        src: './imgs/answers/2.jpg',
+        src: `${STATICPATH}imgs/answers/2.jpg`,
         alt: 'not bad',
       }
     },
@@ -251,7 +254,7 @@ const quizConfig = {
       title: 'Hey, that’s not bad at all.',
       explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
       img: {
-        src: './imgs/answers/2.jpg',
+        src: `${STATICPATH}imgs/answers/2.jpg`,
         alt: 'not bad',
       }
     },
@@ -259,7 +262,7 @@ const quizConfig = {
       title: 'Hey, that’s not bad at all.',
       explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
       img: {
-        src: './imgs/answers/2.jpg',
+        src: `${STATICPATH}imgs/answers/2.jpg`,
         alt: 'not bad',
       }
     },
@@ -267,7 +270,7 @@ const quizConfig = {
       title: 'Great score, you’re a true Kittitian!',
       explanation: 'There’s always more to discover in St. Kitts',
       img: {
-        src: './imgs/answers/3.jpg',
+        src: `${STATICPATH}imgs/answers/3.jpg`,
         alt: 'Great',
       }
     },
