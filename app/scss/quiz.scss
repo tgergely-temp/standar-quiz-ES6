@@ -1,0 +1,85 @@
+.quiz-wrap {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-family: "Austin News Text Roman",Georgia,Times,serif;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.article-width {
+    max-width: 560px;
+  }
+}
+
+
+.quiz-separator {
+  margin: 18px auto;
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.quiz-outcome {
+ opacity: 0;
+ transition: all 2s ease-out 0s;
+
+  .score {
+  display: block;
+  width: 100%;
+  text-align: left;
+  }
+
+  .outcome {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    color: #000;
+    font-size: 18px;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    line-height: 20px;
+  }
+
+  .total-score {
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: 700;
+    color: $color-primary;
+    width: 100%;
+    display: block;
+    margin: 10px auto 10px;
+  }
+}
+
+.quiz-competition {
+  border: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 1s ease-out 0s;
+}
+
+.fade-in {
+ opacity: 1;
+}

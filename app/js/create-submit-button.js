@@ -12,6 +12,7 @@ const createSubmitButton = () => {
   const button = document.createElement('button');
   button.setAttribute('type', 'submit');
   button.setAttribute('id', 'submitBtn');
+  button.setAttribute('class', 'btn submit');
   button.setAttribute('disabled', 'disabled');
   button.innerHTML = 'Submit';
 

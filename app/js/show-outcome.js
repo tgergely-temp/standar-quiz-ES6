@@ -15,7 +15,9 @@ const showOutcome = (score, nQuestions, outcome) => {
   quizOutcome.setAttribute('class', 'quiz-outcome fade-in');
   restartBtn.setAttribute('type', 'button');
   restartBtn.setAttribute('id', 'restartBtn');
+  restartBtn.setAttribute('class', 'btn mg-tp');
   // findoutmoreBtn.setAttribute('id', 'findoutmoreBtn');
+  // findoutmoreBtn.setAttribute('class', 'btn mg-tp mg-rt');
   // findoutmoreBtn.innerHTML = 'Find out more';
   restartBtn.innerHTML = 'Restart';
 

@@ -1,58 +1,30 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   context: path.resolve('./app'),
-  entry: './js/index.js',
-  devServer: {
-    contentBase: './dist'
-  },
-  plugins: [
-    new CleanWebpackPlugin([
-      'dist'
-    ]),
-    new HtmlWebpackPlugin({
-      title: 'Standard Quiz',
-      template: './index.html',
-      inject: true
-    }),
-    new ExtractTextPlugin({
-      filename: 'style2.css'
-
-    }),
-    new CopyWebpackPlugin([{
-      from: './imgs/**/*',
-      to: './'
-    }])
-  ],
+  entry: ['./js/index.js', './scss/styles.scss'],
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve('./dist/'),
+    filename: 'js/index.js',
+    publicPath: './'
   },
   module: {
     rules: [
-      // {
-      //   test: /\.(sass|scss|css)$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader',
-      //     'sass-loader'
-      //   ]
-      // },
       {
-        test: /\.(sass|scss|css)$/,
-        use: ExtractTextPlugin.extract({
+        test: /\.css$/,
+        loader: 'css-loader',
+      },{
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          //resolve-url-loader may be chained before sass-loader if necessary
-          use: [
-            'css-loader',
-            'sass-loader',
-            // {loader: 'postcss-loader', options: {}}
-          ]
-        })
+          use: ['css-loader', 'sass-loader'],
+        }),
       },
       {
         test: /\.js$/,
@@ -77,5 +49,31 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    // new CleanWebpackPlugin([
+    //   'dist'
+    // ]),
+    new HtmlWebpackPlugin({
+      title: 'Standard Quiz',
+      template: './index.html',
+      inject: true
+    }),
+    new BrowserSyncPlugin({
+      server: {
+        baseDir: ['dist']
+      },
+      port: 3000,
+      host: 'localhost',
+      open: false
+    }),
+    new ExtractTextPlugin({ // define where to save the file
+      filename: 'css/[name].css',
+      allChunks: true,
+    }),
+    new CopyWebpackPlugin([{
+      from: './imgs/**/*',
+      to: './'
+    }])
+  ]
 };

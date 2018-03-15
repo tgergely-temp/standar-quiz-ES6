@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,7 +73,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var prod = true;
+var prod = false;
 var STATICPATH = prod ? '/content/dam/travel/Spark/St%20Kitts/2018/quiz/' : './';
 
 var quizConfig = {
@@ -245,60 +245,28 @@ var quizConfig = {
   }],
   outcome: [{
     title: 'Oh dear, you need to lie down in the shade…',
-    explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-    img: {
-      src: STATICPATH + 'imgs/answers/1.jpg',
-      alt: 'Oh dear'
-    }
+    explanation: 'Come to restful St. Kitts for your much-needed holiday. '
   }, {
     title: 'Oh dear, you need to lie down in the shade…',
-    explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-    img: {
-      src: STATICPATH + 'imgs/answers/1.jpg',
-      alt: 'Oh dear'
-    }
+    explanation: 'Come to restful St. Kitts for your much-needed holiday. '
   }, {
     title: 'Oh dear, you need to lie down in the shade…',
-    explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-    img: {
-      src: STATICPATH + 'imgs/answers/1.jpg',
-      alt: 'Oh dear'
-    }
+    explanation: 'Come to restful St. Kitts for your much-needed holiday. '
   }, {
     title: 'Oh dear, you need to lie down in the shade…',
-    explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-    img: {
-      src: STATICPATH + 'imgs/answers/1.jpg',
-      alt: 'Oh dear'
-    }
+    explanation: 'Come to restful St. Kitts for your much-needed holiday. '
   }, {
     title: 'Hey, that’s not bad at all.',
-    explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
-    img: {
-      src: STATICPATH + 'imgs/answers/2.jpg',
-      alt: 'not bad'
-    }
+    explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge'
   }, {
     title: 'Hey, that’s not bad at all.',
-    explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
-    img: {
-      src: STATICPATH + 'imgs/answers/2.jpg',
-      alt: 'not bad'
-    }
+    explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge'
   }, {
     title: 'Hey, that’s not bad at all.',
-    explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
-    img: {
-      src: STATICPATH + 'imgs/answers/2.jpg',
-      alt: 'not bad'
-    }
+    explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge'
   }, {
     title: 'Great score, you’re a true Kittitian!',
-    explanation: 'There’s always more to discover in St. Kitts',
-    img: {
-      src: STATICPATH + 'imgs/answers/3.jpg',
-      alt: 'Great'
-    }
+    explanation: 'There’s always more to discover in St. Kitts'
   }]
 };
 
@@ -319,21 +287,17 @@ var _questions = __webpack_require__(0);
 
 var _questions2 = _interopRequireDefault(_questions);
 
-var _createQuestion = __webpack_require__(3);
+var _createQuestion = __webpack_require__(4);
 
 var _createQuestion2 = _interopRequireDefault(_createQuestion);
 
-var _createQuestionType = __webpack_require__(6);
+var _createQuestionType = __webpack_require__(7);
 
 var _createQuestionType2 = _interopRequireDefault(_createQuestionType);
 
-var _createSubmitButton = __webpack_require__(7);
+var _createSubmitButton = __webpack_require__(8);
 
 var _createSubmitButton2 = _interopRequireDefault(_createSubmitButton);
-
-__webpack_require__(12);
-
-__webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -423,6 +387,14 @@ exports.default = scrollTo;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(1);
+module.exports = __webpack_require__(13);
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -430,7 +402,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createOptions = __webpack_require__(4);
+var _createOptions = __webpack_require__(5);
 
 var _createOptions2 = _interopRequireDefault(_createOptions);
 
@@ -492,7 +464,7 @@ var createQuestion = function createQuestion(item, index) {
 exports.default = createQuestion;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -502,7 +474,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _selectAnswer = __webpack_require__(5);
+var _selectAnswer = __webpack_require__(6);
 
 var _selectAnswer2 = _interopRequireDefault(_selectAnswer);
 
@@ -526,7 +498,7 @@ var createOptions = function createOptions(optionsObj) {
 exports.default = createOptions;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -577,7 +549,7 @@ var selectAnswer = function selectAnswer(e) {
 exports.default = selectAnswer;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -612,7 +584,7 @@ var createQuestionType = function createQuestionType() {
 exports.default = createQuestionType;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -622,7 +594,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _checkAnswers = __webpack_require__(8);
+var _checkAnswers = __webpack_require__(9);
 
 var _checkAnswers2 = _interopRequireDefault(_checkAnswers);
 
@@ -640,6 +612,7 @@ var createSubmitButton = function createSubmitButton() {
   var button = document.createElement('button');
   button.setAttribute('type', 'submit');
   button.setAttribute('id', 'submitBtn');
+  button.setAttribute('class', 'btn submit');
   button.setAttribute('disabled', 'disabled');
   button.innerHTML = 'Submit';
 
@@ -653,7 +626,7 @@ var createSubmitButton = function createSubmitButton() {
 exports.default = createSubmitButton;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -667,7 +640,7 @@ var _questions = __webpack_require__(0);
 
 var _questions2 = _interopRequireDefault(_questions);
 
-var _showOutcome = __webpack_require__(9);
+var _showOutcome = __webpack_require__(10);
 
 var _showOutcome2 = _interopRequireDefault(_showOutcome);
 
@@ -719,7 +692,7 @@ var checkAnswers = function checkAnswers() {
 exports.default = checkAnswers;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -733,7 +706,7 @@ var _questions = __webpack_require__(0);
 
 var _questions2 = _interopRequireDefault(_questions);
 
-var _restartQuiz = __webpack_require__(10);
+var _restartQuiz = __webpack_require__(11);
 
 var _restartQuiz2 = _interopRequireDefault(_restartQuiz);
 
@@ -741,7 +714,7 @@ var _animatedScroll = __webpack_require__(2);
 
 var _animatedScroll2 = _interopRequireDefault(_animatedScroll);
 
-var _getAdobeid = __webpack_require__(11);
+var _getAdobeid = __webpack_require__(12);
 
 var _getAdobeid2 = _interopRequireDefault(_getAdobeid);
 
@@ -759,7 +732,9 @@ var showOutcome = function showOutcome(score, nQuestions, outcome) {
   quizOutcome.setAttribute('class', 'quiz-outcome fade-in');
   restartBtn.setAttribute('type', 'button');
   restartBtn.setAttribute('id', 'restartBtn');
+  restartBtn.setAttribute('class', 'btn mg-tp');
   // findoutmoreBtn.setAttribute('id', 'findoutmoreBtn');
+  // findoutmoreBtn.setAttribute('class', 'btn mg-tp mg-rt');
   // findoutmoreBtn.innerHTML = 'Find out more';
   restartBtn.innerHTML = 'Restart';
 
@@ -855,7 +830,7 @@ var showOutcome = function showOutcome(score, nQuestions, outcome) {
 exports.default = showOutcome;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -898,7 +873,7 @@ var restartQuiz = function restartQuiz() {
 exports.default = restartQuiz;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -917,12 +892,6 @@ var getAdobeID = function getAdobeID() {
 };
 
 exports.default = getAdobeID;
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 13 */

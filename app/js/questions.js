@@ -1,4 +1,4 @@
-const prod = true;
+const prod = false;
 const STATICPATH = prod ? '/content/dam/travel/Spark/St%20Kitts/2018/quiz/' : './';
 
 const quizConfig = {
@@ -213,66 +213,34 @@ const quizConfig = {
     {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-      img: {
-        src: `${STATICPATH}imgs/answers/1.jpg`,
-        alt: 'Oh dear',
-      }
     },
     {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-      img: {
-        src: `${STATICPATH}imgs/answers/1.jpg`,
-        alt: 'Oh dear',
-      }
     },
     {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-      img: {
-        src: `${STATICPATH}imgs/answers/1.jpg`,
-        alt: 'Oh dear',
-      }
     },
     {
       title: 'Oh dear, you need to lie down in the shade…',
       explanation: 'Come to restful St. Kitts for your much-needed holiday. ',
-      img: {
-        src: `${STATICPATH}imgs/answers/1.jpg`,
-        alt: 'Oh dear',
-      }
     },
     {
       title: 'Hey, that’s not bad at all.',
       explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
-      img: {
-        src: `${STATICPATH}imgs/answers/2.jpg`,
-        alt: 'not bad',
-      }
     },
     {
       title: 'Hey, that’s not bad at all.',
       explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
-      img: {
-        src: `${STATICPATH}imgs/answers/2.jpg`,
-        alt: 'not bad',
-      }
     },
     {
       title: 'Hey, that’s not bad at all.',
       explanation: 'There’s nothing like a holiday in St. Kitts to brush up on your local knowledge',
-      img: {
-        src: `${STATICPATH}imgs/answers/2.jpg`,
-        alt: 'not bad',
-      }
     },
     {
       title: 'Great score, you’re a true Kittitian!',
       explanation: 'There’s always more to discover in St. Kitts',
-      img: {
-        src: `${STATICPATH}imgs/answers/3.jpg`,
-        alt: 'Great',
-      }
     },
   ]
 };
