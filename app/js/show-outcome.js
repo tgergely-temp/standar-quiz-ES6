@@ -29,17 +29,17 @@ const showOutcome = (score, nQuestions, outcome) => {
     `<img src="${outcome.img.src}" alt="${outcome.img.alt}" />`;
 
   const markup = `
-      <div class="score">
-        ${ifimg}
-        <h3>You scored</h3>
-        <div class="total-score">
-          ${score}/${nQuestions}
+      <div class="outcome-container">
+        <div class="score">
+          ${ifimg}
+          <h3>You scored ${score}-${nQuestions}</h3>
+          <h3>${outcome.title}</h3>
         </div>
-      </div>
 
-      <div class="outcome">
-        <h3>${outcome.title}</h3>
-        <p>${outcome.explanation}</p>
+        <div class="outcome">
+          <p>${outcome.explanation}</p>
+          <p class="grab">${outcome.grab}</p>
+        </div>
       </div>
   `;
 

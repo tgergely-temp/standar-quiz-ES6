@@ -3,6 +3,7 @@
 .quiz-question-block {
   counter-reset: item;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .quiz-question-header {
@@ -38,9 +39,10 @@
 
 .quiz-question-img {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  width: auto;
+  max-width: none;
   margin-top: 20px;
+  margin-left: -80px;
 
   img {
     width: 100%;
@@ -88,7 +90,7 @@
         }
       }
 
-      &.corrent {
+      &.correct {
         color: #006022;
 
         &:before {

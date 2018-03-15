@@ -18,13 +18,13 @@ const createQuestion = (item, index) => {
   const markup = `
     <!-- Question Header -->
     <div class="quiz-question-header">
+      ${ifimg}
       <div class="quiz-question-number">
         Q.${questionNumber}
       </div>
       <div class="quiz-question-text">
         <p>${item.question}</p>
       </div>
-      ${ifimg}
     </div>
     <!--// Question Header -->
     <!-- Question Options -->

@@ -1,7 +1,8 @@
 .quiz-wrap {
   font-size: 1.7rem;
   line-height: 2.5rem;
-  font-family: "Austin News Text Roman",Georgia,Times,serif; }
+  font-family: "Austin News Text Roman",Georgia,Times,serif;
+  margin-left: 80px; }
   .quiz-wrap.full-width {
     width: 100%; }
   .quiz-wrap.article-width {
@@ -61,7 +62,8 @@
 
 .quiz-question-block {
   counter-reset: item;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
 
 .quiz-question-header {
   margin-bottom: 13px; }
@@ -92,9 +94,10 @@
 
 .quiz-question-img {
   display: block;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 20px; }
+  width: auto;
+  max-width: none;
+  margin-top: 20px;
+  margin-left: -80px; }
   .quiz-question-img img {
     width: 100%; }
 
@@ -129,9 +132,9 @@
       background: #861470;
       color: #fff;
       border: 1px solid #861470; }
-    .quiz-question-options ol li.corrent {
+    .quiz-question-options ol li.correct {
       color: #006022; }
-      .quiz-question-options ol li.corrent:before {
+      .quiz-question-options ol li.correct:before {
         background: #006022;
         color: #fff; }
     .quiz-question-options ol li.selected.incorrect {
@@ -160,3 +163,38 @@
     margin-top: 20px; }
   .btn.mg-rt {
     margin-right: 10px; }
+
+.quiz-wrap .outcome-container {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #861470;
+  padding: 40px; }
+  .quiz-wrap .outcome-container .score {
+    text-align: center;
+    font-size: 45px;
+    line-height: normal;
+    font-weight: 700;
+    color: #861470;
+    font-family: 'Austin News Text Semibold'; }
+    .quiz-wrap .outcome-container .score h3 {
+      text-align: center;
+      line-height: normal;
+      font-size: 45px;
+      font-weight: 700;
+      color: #861470;
+      font-family: 'Austin News Text Semibold';
+      margin: 0px auto; }
+  .quiz-wrap .outcome-container .outcome {
+    font-family: 'Austin News Text Roman';
+    font-size: 15px;
+    margin-top: 20px; }
+    .quiz-wrap .outcome-container .outcome p {
+      line-height: 23px; }
+    .quiz-wrap .outcome-container .outcome .grab {
+      margin-top: 20px;
+      color: #861470; }
+    .quiz-wrap .outcome-container .outcome a {
+      text-decoration: none;
+      font-weight: 700;
+      font-style: italic;
+      color: #861470; }
