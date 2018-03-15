@@ -1,5 +1,4 @@
-const prod = false;
-const STATICPATH = prod ? '/content/dam/travel/Spark/St%20Kitts/2018/quiz/' : './';
+const STATICPATH = process.env.STATICPATH;
 
 const quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit

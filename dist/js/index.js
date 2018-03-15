@@ -73,8 +73,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var prod = false;
-var STATICPATH = prod ? '/content/dam/travel/Spark/St%20Kitts/2018/quiz/' : './';
+var STATICPATH = "./";
 
 var quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit

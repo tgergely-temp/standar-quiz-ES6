@@ -54,6 +54,11 @@ module.exports = {
     // new CleanWebpackPlugin([
     //   'dist'
     // ]),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'STATICPATH': JSON.stringify('./'),
+      },
+    }),
     new HtmlWebpackPlugin({
       title: 'Standard Quiz',
       template: './index.html',
