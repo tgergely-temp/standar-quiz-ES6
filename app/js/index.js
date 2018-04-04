@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import quizConfig from './quiz-config';
-=======
-import quizConfig from './questions';
->>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
 import createQuestion from './create-question';
 import createQuestionType from './create-question-type';
 import createSubmitButton from './create-submit-button';
