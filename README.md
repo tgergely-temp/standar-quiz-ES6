@@ -20,7 +20,7 @@ below.
     1.3.21
 
 ## Installing
-* Clone the master branch in you local machine: `git clone https://[user]@bitbucket.aws.telegraph.co.uk/scm/spark/standard-quiz-webpack-vanilla.git`
+* Clone the master branch in you local machine: `git clone https://github.com/sparkdigitaldev/standar-quiz-ES6.git`
 * `cd standard-quiz-ES6`
 * Within the project folder, install dependencies running `npm install` on your terminal.
 
