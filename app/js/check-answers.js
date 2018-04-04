@@ -3,6 +3,8 @@ import showOutcome from './show-outcome';
 
 const checkAnswers = () => {
   let score = 0;
+  let selectedAnswerIndex = [];
+  let mostFrequentAnswers = [];
 
   /* ---------------------------------------------------
   * Array of questions
@@ -26,12 +28,25 @@ const checkAnswers = () => {
     answers.map((answer, index) => {
       const isCorrect = answer.correct ? 'correct' : 'incorrect';
 
+      if (options[index].className === 'selected') {
+        selectedAnswerIndex.push(index + 1);
+      }
       if (answer.correct && options[index].className === 'selected') {
         score++;
       }
       options[index].classList.add(isCorrect);
     });
-  })
+  });
+
+  /* ---------------------------------------------------
+  * Calculate what answer(s) the user selected the most
+  * --------------------------------------------------- */
+  let tally = selectedAnswerIndex.reduce((obj, current) => {
+    obj[current] = obj[current] ? obj[current] + 1 : 1;
+    return obj;
+  }, {});
+  let highest = Math.max(...Object.values(tally));
+  mostFrequentAnswers = Object.keys(tally).filter(index => tally[index] === highest);
 
   /* ---------------------------------------------------
   * Hide submit button
@@ -41,7 +56,7 @@ const checkAnswers = () => {
   /* ---------------------------------------------------
   * Show result and outcome
   * --------------------------------------------------- */
-  showOutcome(score, quizConfig.quiz.length, quizConfig.outcome[score]);
+  showOutcome(score, mostFrequentAnswers, quizConfig.quiz.length, quizConfig.outcome[score]);
 };
 
 export default checkAnswers;

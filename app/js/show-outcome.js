@@ -3,7 +3,7 @@ import restartQuiz from './restart-quiz';
 import scrollTo from './animated-scroll';
 import getAdobeID from './get-adobeid';
 
-const showOutcome = (score, nQuestions, outcome) => {
+const showOutcome = (score, mostFrequentAnswers, nQuestions, outcome) => {
   /* ---------------------------------------------------
   * Create elements and set attributes
   * --------------------------------------------------- */
@@ -25,6 +25,16 @@ const showOutcome = (score, nQuestions, outcome) => {
   * Outcome markup
   * --------------------------------------------------- */
 
+  const mostFrequentMarkup = mostFrequentAnswers.map(item => `
+    <span class="mfa-${item}"></span>
+    <style>
+      span.mfa-${item}:after {
+        content: counter(mfa-${item}, ${quizConfig.optionsType || 'upper-alpha'});
+        counter-increment: mfa-${item} ${item};
+      }
+    </style>
+  `);
+
   const ifimg = !outcome.img ? '' :
     `<img src="${outcome.img.src}" alt="${outcome.img.alt}" />`;
 
@@ -33,6 +43,7 @@ const showOutcome = (score, nQuestions, outcome) => {
         <div class="score">
           ${ifimg}
           <h3>You scored ${score}-${nQuestions}</h3>
+          <h3>Your most selected answer: ${mostFrequentMarkup.join('&')}</h3>
           <h3>${outcome.title}</h3>
         </div>
 
