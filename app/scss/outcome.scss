@@ -1,0 +1,49 @@
+.quiz-wrap {
+  .outcome-container {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $color-primary;
+    padding: 40px;
+
+    .score {
+      text-align: center;
+      font-size: 45px;
+      line-height: normal;
+      font-weight: 700;
+      color: $color-primary;
+      font-family: 'Austin News Text Semibold';
+
+      h3 {
+        text-align: center;
+        line-height: normal;
+        font-size: 45px;
+        font-weight: 700;
+        color: $color-primary;
+        font-family: 'Austin News Text Semibold';
+        margin: 0px auto;
+      }
+    }
+
+    .outcome {
+      font-family: 'Austin News Text Roman';
+      font-size: 15px;
+      margin-top: 20px;
+
+      p {
+        line-height: 23px;
+      }
+
+      .grab {
+        margin-top: 20px;
+        color: $color-primary;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        font-style: italic;
+        color: $color-primary;
+      }
+    }
+  }
+}
