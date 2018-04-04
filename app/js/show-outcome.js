@@ -9,27 +9,37 @@ const showOutcome = (score, nQuestions, outcome) => {
   * --------------------------------------------------- */
   const wrapper = document.getElementById('quizApp');
   const restartBtn = document.createElement('button');
+  const findoutmoreBtn = document.createElement('button');
   const quizOutcome = document.createElement('div');
 
   quizOutcome.setAttribute('class', 'quiz-outcome fade-in');
   restartBtn.setAttribute('type', 'button');
   restartBtn.setAttribute('id', 'restartBtn');
+  restartBtn.setAttribute('class', 'btn mg-tp');
+  // findoutmoreBtn.setAttribute('id', 'findoutmoreBtn');
+  // findoutmoreBtn.setAttribute('class', 'btn mg-tp mg-rt');
+  // findoutmoreBtn.innerHTML = 'Find out more';
   restartBtn.innerHTML = 'Restart';
 
   /* ---------------------------------------------------
   * Outcome markup
   * --------------------------------------------------- */
-  const markup = `
-      <div class="score">
-        <h3>You scored</h3>
-        <div class="total-score">
-          ${score}/${nQuestions}
-        </div>
-      </div>
 
-      <div class="outcome">
-        <h3>${outcome.title}</h3>
-        <p>${outcome.explanation}</p>
+  const ifimg = !outcome.img ? '' : 
+    `<img src="${outcome.img.src}" alt="${outcome.img.alt}" />`;
+
+  const markup = `
+      <div class="outcome-container">
+        <div class="score">
+          ${ifimg}
+          <h3>You scored ${score}-${nQuestions}</h3>
+          <h3>${outcome.title}</h3>
+        </div>
+
+        <div class="outcome">
+          <p>${outcome.explanation}</p>
+          <p class="grab">${outcome.grab}</p>
+        </div>
       </div>
   `;
 
@@ -38,10 +48,11 @@ const showOutcome = (score, nQuestions, outcome) => {
   /* ---------------------------------------------------
   * Adobe Analytics
   * --------------------------------------------------- */
-  const campaignId = document.head.querySelector('[name="DCSext.campaignId"]').content || '';
-
-  _satellite.setVar('interactive', `cid: ${campaignId} - Standard quiz - score: ${score}`);
-  _satellite.track('sparkinteractive');
+  const campaignId = (document.head.querySelector('[name="DCSext.campaignId"]') || { content: null }).content;
+  if (campaignId) {
+    _satellite.setVar('interactive', `cid: ${campaignId} - Standard quiz - score: ${score}`);
+    _satellite.track('sparkinteractive');
+  }
 
   /* ---------------------------------------------------
   * Get a random number to generate an unique iFrame ID
@@ -51,7 +62,7 @@ const showOutcome = (score, nQuestions, outcome) => {
   /* ---------------------------------------------------
   * Competition Form (WayIn)
   * --------------------------------------------------- */
-  if (quizConfig.competiton_embed !== '') {
+  if (quizConfig.competiton_embed) {
     const scriptTag = document.createElement('script');
     const iFrameTag = document.createElement('iframe');
     const separator = document.createElement('hr');
@@ -87,10 +98,16 @@ const showOutcome = (score, nQuestions, outcome) => {
     });
   }
 
+  /* --------------------------------------------------- 
+  * Removing quiz
+  * ---------------------------------------------------- */
+  // const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];
+  // quizitems.map(elem => elem.parentNode.removeChild(elem));
   /* ---------------------------------------------------
   * Attaching elements to the DOM
   * --------------------------------------------------- */
   wrapper.appendChild(quizOutcome);
+  // wrapper.appendChild(findoutmoreBtn);
   wrapper.appendChild(restartBtn);
 
   /* ---------------------------------------------------

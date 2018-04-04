@@ -1,0 +1,31 @@
+.btn {
+  background: $color-primary;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  background-image: none;
+  border-radius: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  
+  &.submit {
+    background: #ddd;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    background: $color-primary;
+    cursor: pointer;
+  }
+
+  &.mg-tp {
+    //findoutmore
+    //reset
+    margin-top: 20px;
+  }
+
+  &.mg-rt {
+    //findoutmore
+    margin-right: 10px;
+  }
+}

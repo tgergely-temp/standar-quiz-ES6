@@ -1,139 +1,266 @@
+const STATICPATH = process.env.STATICPATH;
+
 const quizConfig = {
   // Options Type: circle | disc | square | armenian | cjk-ideographic | decimal | decimal-leading-zero | georgian | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-alpha | lower-greek | lower-latin | lower-roman | upper-alpha | upper-greek | upper-latin | upper-roman | none | inherit
   optionsType: 'upper-alpha',
   fullWidth: false,
-  competitonEmbedCode: '4bf93cf6-ee9a-42b5-824c-69133c37d80c',
+  // competitonEmbedCode: '',
   quiz: [{
-      question: 'Which animals take part in the annual Easter Race Festival in Buccoo?',
-      options: [{
-          copy: 'Rabbits',
-          correct: false
-        },
-        {
-          copy: 'Goats',
-          correct: true
-        },
-        {
-          copy: 'Horses',
-          correct: false
-        }
-      ],
-      feedback: ''
-    }, {
-      question: 'Upon seeing Tobago for the first time Christopher Columbus described the island as ‘bella forma’ (beautifully formed). But in which year did this happen?',
-      options: [{
-          copy: '1498',
-          correct: true
-        },
-        {
-          copy: '1507',
-          correct: false
-        },
-        {
-          copy: '1513',
-          correct: false
-        }
-      ],
-      feedback: ''
+    question: 'How many “Earthrises” can astronauts on board the International Space Station witness in 24 hours?',
+    img: {
+      src: `${STATICPATH}imgs/1.jpg`,
+      alt: 'capital',
+    },
+    options: [{
+      copy: 'One',
+      correct: false
     },
     {
-      question: 'There is a massive piece of a particular type of coral off the coast of Tobago. But which part of the body is it named after?',
-      options: [{
-          copy: 'Leg',
-          correct: false
-        },
-        {
-          copy: 'Brain',
-          correct: true
-        },
-        {
-          copy: 'Kidney',
-          correct: false
-        }
-      ],
-      feedback: ''
+      copy: '16',
+      correct: true
     },
     {
-      question: 'Main Ridge Forest Reserve is the oldest protected rainforest in the western hemisphere. But when did its protection begin?',
-      options: [{
-          copy: '1576',
-          correct: false
-        },
-        {
-          copy: '1676',
-          correct: false
-        },
-        {
-          copy: '1776',
-          correct: true
-        }
-      ],
-      feedback: ''
+      copy: '32',
+      correct: false
+    }],
+    feedback: ''
+  }, {
+    question: 'What festival coincides with the migratory movements of this beautiful creature?',
+    img: {
+      src: `${STATICPATH}imgs/2.jpg`,
+      alt: 'crater',
+    },
+    options: [{
+      copy: 'Monarch Festival (Minneapolis, US)',
+      correct: false
     },
     {
-      question: 'Which film was shot entirely in Tobago?',
-      options: [{
-          copy: 'Swiss Family Robinson',
-          correct: true
-        },
-        {
-          copy: 'Castaway',
-          correct: false
-        },
-        {
-          copy: 'Robinson Crusoe',
-          correct: false
-        }
-      ],
-      feedback: ''
+      copy: 'Mariposa Butterfly Festival (California, US)',
+      correct: false
     },
     {
-      question: 'The Nylon Pool, a shallow white ground coral pool off Pigeon Point is rumoured to be named after a member of the royal family who said the water was as clear as her nylon stockings. But which royal?',
-      options: [{
-          copy: 'Princess Beatrice',
-          correct: false
-        },
-        {
-          copy: 'Princess Eugenie',
-          correct: false
-        },
-        {
-          copy: 'Princess Margaret ',
-          correct: true
-        }
-      ],
-      feedback: ''
-    }
+      copy: 'The Day of the Dead (Mexico)',
+      correct: true
+    }],
+    feedback: ''
+  },
+  {
+    question: 'What is the smallest microbe on the planet?',
+    img: {
+      src: `${STATICPATH}imgs/3.jpg`,
+      alt: 'beaches',
+    },
+    options: [{
+      copy: 'A virus',
+      correct: true
+    },
+    {
+      copy: 'A cell',
+      correct: false
+    },
+    {
+      copy: 'A bacterium',
+      correct: false
+    }],
+    feedback: ''
+  },
+  {
+    question: 'How deep into Earth’s core have humans explored?',
+    img: {
+      src: `${STATICPATH}imgs/4.jpg`,
+      alt: 'people',
+    },
+    options: [{
+      copy: '12,380m',
+      correct: true
+    },
+    {
+      copy: '1,238m',
+      correct: false
+    },
+    {
+      copy: '124m',
+      correct: false
+    }],
+    feedback: ''
+  },
+  {
+    question: 'What is the fastest creature in the animal kingdom?',
+    img: {
+      src: `${STATICPATH}imgs/5.jpg`,
+      alt: 'language',
+    },
+    options: [{
+      copy: 'Cheetah',
+      correct: false
+    },
+    {
+      copy: 'Sailfish',
+      correct: false
+    },
+    {
+      copy: 'Brazilian free-tailed bat',
+      correct: true
+    }],
+    feedback: ''
+  },
+  {
+    question: 'What is the oldest fossil ever discovered to date?',
+    img: {
+      src: `${STATICPATH}imgs/6.jpg`,
+      alt: 'sister',
+    },
+    options: [{
+      copy: 'Part of a dinosaur',
+      correct: false
+    },
+    {
+      copy: 'Bacteria',
+      correct: true
+    },
+    {
+      copy: 'A tree',
+      correct: false
+    }],
+    feedback: ''
+  },
+  {
+    question: 'Roughly how many species are in existence on planet Earth today?',
+    img: {
+      src: `${STATICPATH}imgs/7.jpg`,
+      alt: 'goat water',
+    },
+    options: [{
+      copy: '1.5 million',
+      correct: false
+    },
+    {
+      copy: '162 million',
+      correct: false
+    },
+    {
+      copy: '1-6 billion',
+      correct: true
+    }],
+    feedback: ''
+  },
+  {
+    question: 'What’s the largest living organism on Earth?',
+    img: {
+      src: `${STATICPATH}imgs/8.jpg`,
+      alt: 'goat water',
+    },
+    options: [{
+      copy: 'Great Barrier Reef',
+      correct: false
+    },
+    {
+      copy: 'Honey fungus',
+      correct: true
+    },
+    {
+      copy: 'Blue whale',
+      correct: false
+    }],
+    feedback: ''
+  },
+  {
+    question: 'If you untwisted all the DNA in all the cells of the human body, how far would it stretch end to end?',
+    img: {
+      src: `${STATICPATH}imgs/9.jpg`,
+      alt: 'DNA',
+    },
+    options: [{
+      copy: '9.3 trillion miles',
+      correct: true
+    },
+    {
+      copy: '9,300 miles',
+      correct: false
+    },
+    {
+      copy: '9.3ft',
+      correct: false
+    }],
+    feedback: ''
+  },
+  {
+    question: 'Arguably what is the most important factor that sets humans apart from other animals?',
+    img: {
+      src: `${STATICPATH}imgs/10.jpg`,
+      alt: 'Day of the Dead',
+    },
+    options: [{
+      copy: 'A backbone',
+      correct: false
+    },
+    {
+      copy: 'The ability to use tools',
+      correct: false
+    },
+    {
+      copy: 'Consciousness',
+      correct: true
+    }],
+    feedback: ''
+  }
   ],
   outcome: [
     {
-      title: 'Must try harder',
-      explanation: '<p>0 out of 6</p> <p>The bad news is you’re not very good at Tobago quizzes. The good news is there’s a very easy way to make sure you ace the next one. Read our inspirational Tobago supplement.</p>'
+      title: 'Alien invader',
+      explanation: 'Oh dear. Perhaps you’re visiting from another planet? Never mind: hopefully you’ve discovered some facts that surprised you and made you appreciate what an incredibly special planet we inhabit. One thing’s for sure, though: One Strange Rock is going to blow your mind. ',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
     },
     {
-      title: 'Must try harder',
-      explanation: '<p>1 out of 6</p> <p>There’s certainly room for improvement but let’s look on the bright side – you didn’t score 0. You do have much to learn about a seriously impressive island so make sure you read all about it.</p>'
+      title: 'Alien invader',
+      explanation: 'Oh dear. Perhaps you’re visiting from another planet? Never mind: hopefully you’ve discovered some facts that surprised you and made you appreciate what an incredibly special planet we inhabit. One thing’s for sure, though: One Strange Rock is going to blow your mind. ',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
     },
     {
-      title: 'Must try harder',
-      explanation: '<p>2 out of 6</p> <p>Not bad but not brilliant either. You know a little bit about Tobago but could do with a serious refresher course. It’s probably worth considering jumping on a plane over there immediately.</p>'
+      title: 'Alien invader',
+      explanation: 'Oh dear. Perhaps you’re visiting from another planet? Never mind: hopefully you’ve discovered some facts that surprised you and made you appreciate what an incredibly special planet we inhabit. One thing’s for sure, though: One Strange Rock is going to blow your mind. ',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
     },
     {
-      title: 'Not bad',
-      explanation: '<p>3 out of 6</p> <p>A respectable score but nothing to show off about on your social media channels. If you want to ensure a perfect score next time you’ll need to get revising. Take a look at our guide to everything Tobago to help.</p>',
+      title: 'Alien invader',
+      explanation: 'Oh dear. Perhaps you’re visiting from another planet? Never mind: hopefully you’ve discovered some facts that surprised you and made you appreciate what an incredibly special planet we inhabit. One thing’s for sure, though: One Strange Rock is going to blow your mind. ',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
     },
     {
-      title: 'Not bad',
-      explanation: '<p>4 out of 6</p> <p>This score deserves a well done. Not a huge congratulations but certainly a gentle pat on the back. You seem to know a fair amount about the island but could improve with the help of this inspirational guide to Tobago.</p>'
+      title: 'Wannabe Einstein',
+      explanation: 'You are well on the way to attaining honorary nerd status! Hopefully along the way you’ve also learnt a few more facts about this astonishing planet that we inhabit. What’s more, if you watch One Strange Rock you’ll open your mind to other branches of science that may have passed you by.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
     },
     {
-      title: 'Excellent work',
-      explanation: '<p>5 out of 6</p> <p>A great score but frustratingly close to perfection. You are a Tobago master but agonisingly short of being a grand master. Not quite ready for Tobago to be your specialist subject on a television quiz show. You get the idea. We’re impressed, though. If you want to achieve perfection next time, this guide will certainly help.</p>'
+      title: 'Wannabe Einstein',
+      explanation: 'You are well on the way to attaining honorary nerd status! Hopefully along the way you’ve also learnt a few more facts about this astonishing planet that we inhabit. What’s more, if you watch One Strange Rock you’ll open your mind to other branches of science that may have passed you by.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
     },
     {
-      title: 'Excellent work',
-      explanation: '<p>6 out 6</p> <p>What can we say? Other than bravo. You are either from Tobago or know the place very well indeed. In which case you’re already fully aware of what an amazing island it is. Still, if you want to start planning your next trip, this guide is well worth a look.</p>'
-    }
+      title: 'Wannabe Einstein',
+      explanation: 'You are well on the way to attaining honorary nerd status! Hopefully along the way you’ve also learnt a few more facts about this astonishing planet that we inhabit. What’s more, if you watch One Strange Rock you’ll open your mind to other branches of science that may have passed you by.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
+    },
+    {
+      title: 'Science genius',
+      explanation: 'You are officially a science guru! Whether they were intelligent guesses or dead certs, you can be proud of your score – and hopefully you discovered the odd fact you didn’t know about planet Earth. Why not supplement your knowledge by watching One Strange Rock? You’re bound to be amazed by the scope of the series.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
+    },
+    {
+      title: 'Science genius',
+      explanation: 'You are officially a science guru! Whether they were intelligent guesses or dead certs, you can be proud of your score – and hopefully you discovered the odd fact you didn’t know about planet Earth. Why not supplement your knowledge by watching One Strange Rock? You’re bound to be amazed by the scope of the series.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
+    },
+    {
+      title: 'Science genius',
+      explanation: 'You are officially a science guru! Whether they were intelligent guesses or dead certs, you can be proud of your score – and hopefully you discovered the odd fact you didn’t know about planet Earth. Why not supplement your knowledge by watching One Strange Rock? You’re bound to be amazed by the scope of the series.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
+    },
+    {
+      title: 'Science genius',
+      explanation: 'You are officially a science guru! Whether they were intelligent guesses or dead certs, you can be proud of your score – and hopefully you discovered the odd fact you didn’t know about planet Earth. Why not supplement your knowledge by watching One Strange Rock? You’re bound to be amazed by the scope of the series.',
+      grab: 'Tune in at 9pm on 27 March on National Geographic or visit <a href="//tgr.ph/onestrangerock" target="_blank" rel="nofollow noopener noreferrer">tgr.ph/onestrangerock</a> to discover more',
+    },
   ]
 };
 

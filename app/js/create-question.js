@@ -7,11 +7,20 @@ const createQuestion = (item, index) => {
   /* ---------------------------------------------------
   * Questions template markup
   * --------------------------------------------------- */
+
+  const ifimg = !item.img ? '' :
+    `
+    <div class="quiz-question-img">
+      <img src="${item.img.src}" alt="${item.img.alt}" />
+    </div>
+  `;
+
   const markup = `
     <!-- Question Header -->
     <div class="quiz-question-header">
+      ${ifimg}
       <div class="quiz-question-number">
-        Q. ${questionNumber}
+        Q.${questionNumber}
       </div>
       <div class="quiz-question-text">
         <p>${item.question}</p>
