@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import quizConfig from './quiz-config';
+=======
+import quizConfig from './questions';
+>>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
 import restartQuiz from './restart-quiz';
 import scrollTo from './animated-scroll';
 import getAdobeID from './get-adobeid';
@@ -25,7 +29,11 @@ const showOutcome = (score, nQuestions, outcome) => {
   * Outcome markup
   * --------------------------------------------------- */
 
+<<<<<<< HEAD
   const ifimg = !outcome.img ? '' :
+=======
+  const ifimg = !outcome.img ? '' : 
+>>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
     `<img src="${outcome.img.src}" alt="${outcome.img.alt}" />`;
 
   const markup = `
@@ -98,7 +106,11 @@ const showOutcome = (score, nQuestions, outcome) => {
     });
   }
 
+<<<<<<< HEAD
   /* ---------------------------------------------------
+=======
+  /* --------------------------------------------------- 
+>>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
   * Removing quiz
   * ---------------------------------------------------- */
   // const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];

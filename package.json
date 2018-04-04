@@ -14,7 +14,11 @@
   ],
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "https://github.com/sparkdigitaldev/standar-quiz-ES6.git"
+=======
+    "url": "https://cherinod@bitbucket.aws.telegraph.co.uk/scm/spark/standard-quiz-webpack-vanilla.git"
+>>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
   },
   "keywords": [
     "quiz"
@@ -22,9 +26,15 @@
   "author": "Daniel Cherino",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/sparkdigitaldev/standar-quiz-ES6.git/issues"
   },
   "homepage": "",
+=======
+    "url": "https://cherinod@bitbucket.aws.telegraph.co.uk/scm/spark/standard-quiz-webpack-vanilla/issues"
+  },
+  "homepage": "https://cherinod@bitbucket.aws.telegraph.co.uk/scm/spark/standard-quiz-webpack-vanilla#readme",
+>>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",

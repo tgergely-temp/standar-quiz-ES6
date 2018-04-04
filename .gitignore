@@ -1,2 +1,6 @@
 node_modules
 .DS_Store
+<<<<<<< HEAD
+=======
+dist/
+>>>>>>> 67bf404da60365343d9b798ed6ce6d3d99a530dd
