@@ -14,10 +14,10 @@ You should be able to run the following command after the installation procedure
 below.
 
     $ node --version
-    v0.10.24
+    v8.10.0
 
     $ npm --version
-    1.3.21
+    5.6.0
 
 ## Installing
 * Clone the master branch onto your local machine: `git clone https://github.com/sparkdigitaldev/standar-quiz-ES6.git`
