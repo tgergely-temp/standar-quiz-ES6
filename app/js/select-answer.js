@@ -1,4 +1,4 @@
-import quizConfig from './questions';
+import quizConfig from './quiz-config';
 
 const selectAnswer = e => {
   const quizLength = quizConfig.quiz.length;

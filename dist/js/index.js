@@ -311,9 +311,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _questions = __webpack_require__(0);
+var _quizConfig = __webpack_require__(0);
 
-var _questions2 = _interopRequireDefault(_questions);
+var _quizConfig2 = _interopRequireDefault(_quizConfig);
 
 var _createQuestion = __webpack_require__(4);
 
@@ -333,7 +333,7 @@ var initQuiz = function initQuiz() {
   /* ---------------------------------------------------------------
   * Creating the div tag to wrapping the quiz
   * ---------------------------------------------------------------- */
-  var quizWidth = _questions2.default.fullWidth ? 'full-width' : 'article-width';
+  var quizWidth = _quizConfig2.default.fullWidth ? 'full-width' : 'article-width';
   var mainWrapper = document.getElementById('quizApp');
 
   if (!mainWrapper) {
@@ -344,7 +344,7 @@ var initQuiz = function initQuiz() {
   /* ---------------------------------------------------------------
   * Iterating through questions
   * --------------------------------------------------------------- */
-  _questions2.default.quiz.map(function (item, indx) {
+  _quizConfig2.default.quiz.map(function (item, indx) {
     (0, _createQuestion2.default)(item, indx);
   });
   /* --------------------------------------------------------------------------
@@ -375,27 +375,27 @@ exports.default = initQuiz;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 /* ---------------------------------------------------
 * Scroll animation from GitHub user Andjosh
 * https://gist.github.com/andjosh/6764939
 * --------------------------------------------------- */
 var scrollTo = function scrollTo(element, to, duration) {
-    var start = element.scrollTop,
-        change = to - start,
-        increment = 20;
-    var currentTime = 0;
+  var start = element.scrollTop,
+      change = to - start,
+      increment = 20;
+  var currentTime = 0;
 
-    var animateScroll = function animateScroll() {
-        currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        element.scrollTop = val;
-        if (currentTime < duration) {
-            setTimeout(animateScroll, increment);
-        }
-    };
-    animateScroll();
+  var animateScroll = function animateScroll() {
+    currentTime += increment;
+    var val = Math.easeInOutQuad(currentTime, start, change, duration);
+    element.scrollTop = val;
+    if (currentTime < duration) {
+      setTimeout(animateScroll, increment);
+    }
+  };
+  animateScroll();
 };
 
 //t = current time
@@ -403,10 +403,10 @@ var scrollTo = function scrollTo(element, to, duration) {
 //c = change in value
 //d = duration
 Math.easeInOutQuad = function (t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
+  t /= d / 2;
+  if (t < 1) return c / 2 * t * t + b;
+  t--;
+  return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
 exports.default = scrollTo;
@@ -536,14 +536,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _questions = __webpack_require__(0);
+var _quizConfig = __webpack_require__(0);
 
-var _questions2 = _interopRequireDefault(_questions);
+var _quizConfig2 = _interopRequireDefault(_quizConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var selectAnswer = function selectAnswer(e) {
-  var quizLength = _questions2.default.quiz.length;
+  var quizLength = _quizConfig2.default.quiz.length;
   var answers = e.target.parentNode.children;
   var answersArr = [].slice.call(answers); // Convert to Array
   var selected = e.target;
@@ -587,9 +587,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _questions = __webpack_require__(0);
+var _quizConfig = __webpack_require__(0);
 
-var _questions2 = _interopRequireDefault(_questions);
+var _quizConfig2 = _interopRequireDefault(_quizConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -602,7 +602,7 @@ var createQuestionType = function createQuestionType() {
   /* ---------------------------------------------------
   * Write css rules
   * --------------------------------------------------- */
-  listStyle.innerHTML = '\n    .quiz-question-options ol li:before {\n      content: counter(item, ' + (_questions2.default.optionsType || 'upper-alpha') + ')\n    }\n  ';
+  listStyle.innerHTML = '\n    .quiz-question-options ol li:before {\n      content: counter(item, ' + (_quizConfig2.default.optionsType || 'upper-alpha') + ')\n    }\n  ';
   /* ---------------------------------------------------
   * Append <style> tag
   * --------------------------------------------------- */
@@ -664,9 +664,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _questions = __webpack_require__(0);
+var _quizConfig = __webpack_require__(0);
 
-var _questions2 = _interopRequireDefault(_questions);
+var _quizConfig2 = _interopRequireDefault(_quizConfig);
 
 var _showOutcome = __webpack_require__(10);
 
@@ -690,7 +690,7 @@ var checkAnswers = function checkAnswers() {
   * Iterate question
   * --------------------------------------------------- */
   questionsArray.map(function (question, index) {
-    var answers = _questions2.default.quiz[index].options;
+    var answers = _quizConfig2.default.quiz[index].options;
     var options = question.querySelectorAll('li');
 
     /* ---------------------------------------------------
@@ -714,7 +714,7 @@ var checkAnswers = function checkAnswers() {
   /* ---------------------------------------------------
   * Show result and outcome
   * --------------------------------------------------- */
-  (0, _showOutcome2.default)(score, _questions2.default.quiz.length, _questions2.default.outcome[score]);
+  (0, _showOutcome2.default)(score, _quizConfig2.default.quiz.length, _quizConfig2.default.outcome[score]);
 };
 
 exports.default = checkAnswers;
@@ -730,9 +730,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _questions = __webpack_require__(0);
+var _quizConfig = __webpack_require__(0);
 
-var _questions2 = _interopRequireDefault(_questions);
+var _quizConfig2 = _interopRequireDefault(_quizConfig);
 
 var _restartQuiz = __webpack_require__(11);
 
@@ -793,12 +793,12 @@ var showOutcome = function showOutcome(score, nQuestions, outcome) {
   /* ---------------------------------------------------
   * Competition Form (WayIn)
   * --------------------------------------------------- */
-  if (_questions2.default.competiton_embed) {
+  if (_quizConfig2.default.competiton_embed) {
     var scriptTag = document.createElement('script');
     var iFrameTag = document.createElement('iframe');
     var separator = document.createElement('hr');
 
-    iFrameTag.setAttribute('src', 'https://display.engagesciences.com/display/container/dc/' + _questions2.default.competitonEmbedCode);
+    iFrameTag.setAttribute('src', 'https://display.engagesciences.com/display/container/dc/' + _quizConfig2.default.competitonEmbedCode);
     iFrameTag.setAttribute('scrolling', 'no');
     iFrameTag.setAttribute('id', 'ngxFrame' + randomNum);
     iFrameTag.setAttribute('allowTransparency', 'true');
@@ -829,7 +829,7 @@ var showOutcome = function showOutcome(score, nQuestions, outcome) {
     });
   }
 
-  /* --------------------------------------------------- 
+  /* ---------------------------------------------------
   * Removing quiz
   * ---------------------------------------------------- */
   // const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];

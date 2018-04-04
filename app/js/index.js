@@ -1,4 +1,4 @@
-import quizConfig from './questions';
+import quizConfig from './quiz-config';
 import createQuestion from './create-question';
 import createQuestionType from './create-question-type';
 import createSubmitButton from './create-submit-button';

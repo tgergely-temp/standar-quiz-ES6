@@ -1,4 +1,4 @@
-import quizConfig from './questions';
+import quizConfig from './quiz-config';
 import showOutcome from './show-outcome';
 
 const checkAnswers = () => {

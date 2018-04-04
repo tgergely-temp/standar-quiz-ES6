@@ -1,4 +1,4 @@
-import quizConfig from './questions';
+import quizConfig from './quiz-config';
 import restartQuiz from './restart-quiz';
 import scrollTo from './animated-scroll';
 import getAdobeID from './get-adobeid';
@@ -25,7 +25,7 @@ const showOutcome = (score, nQuestions, outcome) => {
   * Outcome markup
   * --------------------------------------------------- */
 
-  const ifimg = !outcome.img ? '' : 
+  const ifimg = !outcome.img ? '' :
     `<img src="${outcome.img.src}" alt="${outcome.img.alt}" />`;
 
   const markup = `
@@ -98,7 +98,7 @@ const showOutcome = (score, nQuestions, outcome) => {
     });
   }
 
-  /* --------------------------------------------------- 
+  /* ---------------------------------------------------
   * Removing quiz
   * ---------------------------------------------------- */
   // const quizitems = [...wrapper.getElementsByClassName('quiz-question-block')];

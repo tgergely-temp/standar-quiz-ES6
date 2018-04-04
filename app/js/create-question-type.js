@@ -1,11 +1,11 @@
-import quizConfig from './questions';
+import quizConfig from './quiz-config';
 
 const createQuestionType = () => {
   const quiz = document.getElementById('quizApp'); // Quiz
   /* ---------------------------------------------------
   * Create <style> tag
   * --------------------------------------------------- */
-  const listStyle = document.createElement('style'); 
+  const listStyle = document.createElement('style');
   /* ---------------------------------------------------
   * Write css rules
   * --------------------------------------------------- */
